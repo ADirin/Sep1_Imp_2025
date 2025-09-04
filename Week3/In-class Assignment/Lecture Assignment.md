@@ -74,9 +74,10 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 1. Take a screenshot of the output showing the results of your tests.
 2. Include your name in the screenshot for identification.
 3. Submit the screenshot to the designated folder in Moodle as per classroom instructions.
+4. Attach also the github repo of the solutions
 
 ---
 
 ## Additional Notes
 - Ensure that all your test cases pass successfully.
-- Refer to your lecture notes or ask for help if you encounter any issues.
+
