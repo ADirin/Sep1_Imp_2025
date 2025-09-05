@@ -33,14 +33,7 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 
 ---
 
-### Step 2: Set Up JUnit in Your Project
-1. **Add the JUnit dependency**:
-   - Right-click the `TemperatureConverter` class and navigate to `Go To > Test`.
-   - Select `JUnit` and click `OK`.
-  
----
-
-### Step 3: Create the Test Class
+### Step 2: Create the Test Class
 1. **Generate a test class** for `TemperatureConverter`:
    - Right-click on the `TemperatureConverter` class file.
    - Select `Go to > Test` or `Generate > Test`.
@@ -49,7 +42,7 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 
 ---
 
-### Step 4: Write Unit Tests
+### Step 3: Write Unit Tests
 1. **Initialize the Test Class**:
    - Set up a new instance of `TemperatureConverter` in the test class.
 
@@ -63,7 +56,7 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 
 ---
 
-### Step 5: Run the Tests
+### Step 4: Run the Tests
 1. **Run the test class**:
    - Right-click on the `TemperatureConverterTest` class and select `Run 'TemperatureConverterTest'`.
    - Observe the results in the Run window.
@@ -73,7 +66,7 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 ## Submission Instructions
 1. Take a screenshot of the output showing the results of your tests.
 3. Submit the screenshot to the designated folder in Moodle as per classroom instructions.
-4. Attach also the github repo of the solutions
+4. Attach also the github repo of the solution
 
 ---
 
