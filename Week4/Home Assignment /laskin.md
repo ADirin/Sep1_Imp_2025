@@ -1,3 +1,37 @@
+#Week 4 in-class assignment is the continuetion of last week assignment, In case you have not done it, the you can find a sample code also here...
+
+### Your Tasks in this assignment.
+You have to extend the task last week assignment by adding the *JACOCO*code coverage to the tempreture junit test report. to do that follow the following steps.
+- Copy the following sample jacoco pluging and add it into you **POM.XML** as shown during the lecture
+ ```
+<build>
+<plugins>
+<plugin>
+<groupId>org.jacoco</groupId>
+<artifactId>jacoco-maven-plugin</artifactId>
+<version>0.7.7.201606060606</version>
+<executions>
+<execution>
+<goals>
+<goal>prepare-agent</goal>
+</goals>
+</execution>
+<execution>
+<id>report</id>
+<phase>prepare-package</phase>
+<goals>
+<goal>report</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+</plugins>
+</build>  ```
+- Run  maven--> clean-maven and  -->maven install
+- Make sure the Target folder is created
+   - open the index.html
+   - Upload it to the public html folder and share the link in the moodle folder 
+
 
 ## Example: Temperature Conversion
 
@@ -65,10 +99,8 @@ Start by writing a simple test to convert Fahrenheit to Celsius.
 
 2. **Run the Test:**
 - Right-click on the TemperatureConverterTest class and select Run 'TemperatureConverterTest'.
-- The test will fail since the TemperatureConverter class doesn't exist yet.
 
 ### Step 4: Add More Tests
-Following TDD, we will now write more tests for other functionalities.
 
 1. Test for Celsius to Fahrenheit:
 - Add the following test to the TemperatureConverterTest class:
@@ -83,8 +115,6 @@ public void testCelsiusToFahrenheit() {
 Explanation:
 
 - This test checks if 0°C is converted to 32°F.
-2. Run the Test:
-- The test will fail since the celsiusToFahrenheit method is not yet implemented.
 
 
 ### Step 5: Add a Test for Edge Cases
@@ -102,37 +132,12 @@ public void testIsExtremeTemperature() {
 ```
 2. Run the Test:
 
-- The test will fail because the isExtremeTemperature method is not implemented.
 ```
-4. Run the Test Again:
 
 - All tests should pass, demonstrating the successful implementation of the functionality.
-### Step 6: Refactor the Code
-1. Review and Clean Up:
-
-- Check if there’s any redundant code or if anything can be optimized.
-- Make sure the code is clean and well-organized.
-2. Run All Tests:
-- After refactoring, run all the tests again to ensure that everything still works as expected.
-## Conclusion
-This exercise illustrates the power of Test-Driven Development. By writing tests first and implementing only the necessary code to pass those tests, we ensure that our software is reliable, bug-free, and easier to maintain. TDD encourages a disciplined approach to writing code, which helps in building robust and scalable applications.
-
-____________________________________________________________________________________________________________________________________
 
 
-# Testing Concepts
 
-In software development, **acceptance testing** and **unit testing** are two fundamental types of testing that serve different purposes. Below, we define each concept and provide examples using the `TemperatureConverter` class.
-
-## Unit Testing
-
-**Unit Testing** focuses on testing individual components or methods in isolation to ensure they function correctly. Unit tests are typically written by developers during the coding process and are aimed at validating the correctness of the smallest parts of the codebase.
-
-### Example for `TemperatureConverter` Class
-
-For the `TemperatureConverter` class, unit tests might include:
-
-#### Testing `fahrenheitToCelsius` Method
 
 ```java
 @Test
@@ -186,11 +191,6 @@ public void testIsExtremeTemperature() {
 
 
 `````
-## Acceptance Testing
-**Acceptance Testing** focuses on verifying that the entire system or a specific feature meets the defined requirements and behaves as expected in real-world scenarios. Acceptance tests are usually written from the perspective of the end-user and are often executed after unit tests. They are aimed at ensuring the application meets business needs and user requirements.
-
-### Example for TemperatureConverter Class
-For the TemperatureConverter class, acceptance tests might be designed to check how the class integrates into a larger system or how it meets user requirements:
 
 ### Test Overall Conversion Accuracy
 ```java
