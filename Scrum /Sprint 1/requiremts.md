@@ -1,7 +1,7 @@
 # Sprint 1 Tasks (19.08-02.09)  
 **Amir Dirin / F2025**  
 
-## Sprint 1 Objective (**10 Points** )  
+⚠️ ## Sprint 1 Objective (**10 Points** )  
 <span style="background-color: #ffff99;">Establish the project team, choose a topic, define the project vision, and set up the tools along with the initial product backlog.</span>  
 
 **NOTE FOR STUDENTS:**  
