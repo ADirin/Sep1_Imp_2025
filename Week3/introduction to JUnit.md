@@ -156,7 +156,7 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 
 -----------------
 
-# 📌 JUnit 4 vs JUnit 5 Annotations  
+#  JUnit 4 vs JUnit 5 Annotations  
 
 | Feature                    | JUnit 4                   | JUnit 5                 |
 |-----------------------------|-------------------------------|--------------------------|
@@ -178,6 +178,6 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 
 ---------------------------------------------------------
 
-### Lecture Demo (Cal/ Degree Duration)
+### 📌Lecture Demo (Cal/ Degree Duration)
 - (Source Code) https://github.com/ADirin/Week3_lectureDemo_Cal_Degree.git
 
