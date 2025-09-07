@@ -57,6 +57,9 @@ Unit tests require ongoing maintenance to remain effective. This involves:
 - Removing obsolete tests that no longer apply.
 - Periodically reviewing and refactoring test code for clarity and effici
 
+
+
+
 ## Example Application: Calculator (Lecture Demo)
 
 Let's consider a simple example application: a calculator that performs basic arithmetic operations (addition, subtraction, multiplication, division).
@@ -150,4 +153,75 @@ Right-click on the CalculatorTest class and select "Run 'CalculatorTest'".
 IntelliJ IDEA will execute the unit tests and display the results in the "Run" tool window.
 
 Green checkmarks indicate successful tests, while red crosses indicate failures.
+
+-----------------
+
+# 📌 JUnit Annotations Cheat Sheet  
+
+---
+
+## 🔹 JUnit 5 (Jupiter)  
+
+- **`@Test`**  
+  Marks a method as a test case.  
+
+- **`@BeforeEach`**  
+  Runs before each test method (used for setup).  
+
+- **`@AfterEach`**  
+  Runs after each test method (used for cleanup).  
+
+- **`@BeforeAll`**  
+  Runs once before all test methods in the class (must be `static`).  
+
+- **`@AfterAll`**  
+  Runs once after all test methods in the class (must be `static`).  
+
+- **`@Disabled`**  
+  Skips (disables) the test method or class.  
+
+- **`@DisplayName`**  
+  Provides a custom name for a test.  
+
+- **`@RepeatedTest`**  
+  Runs the same test multiple times.  
+
+- **`@ParameterizedTest`**  
+  Runs a test with different input values.  
+
+- **`@Tag`**  
+  Assigns tags to tests for filtering.  
+
+- **`@Nested`**  
+  Allows structuring tests with inner classes.  
+
+---
+
+## 🔹 JUnit 4  
+
+- **`@Test`**  
+  Marks a method as a test case.  
+
+- **`@Before`**  
+  Runs before each test method (setup).  
+
+- **`@After`**  
+  Runs after each test method (cleanup).  
+
+- **`@BeforeClass`**  
+  Runs once before all test methods in the class (must be `static`).  
+
+- **`@AfterClass`**  
+  Runs once after all test methods in the class (must be `static`).  
+
+- **`@Ignore`**  
+  Skips (ignores) the test method or class.  
+
+- **`@RunWith`**  
+  Specifies a custom test runner (e.g., `@RunWith(Parameterized.class)`).  
+
+- **`@Rule`**  
+  Adds custom behavior to tests (e.g., TemporaryFolder, ExpectedException).  
+
+
 
