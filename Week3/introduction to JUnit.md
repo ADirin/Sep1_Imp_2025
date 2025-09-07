@@ -158,21 +158,22 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 
 # 📌 JUnit 4 vs JUnit 5 Annotations  
 
-| Purpose                     | JUnit 4 Annotation         | JUnit 5 Annotation       |
-|-----------------------------|----------------------------|--------------------------|
-| Mark a test method          | `@Test`                   | `@Test`                 |
-| Run before each test        | `@Before`                 | `@BeforeEach`           |
-| Run after each test         | `@After`                  | `@AfterEach`            |
-| Run once before all tests   | `@BeforeClass` (static)   | `@BeforeAll` (static)   |
-| Run once after all tests    | `@AfterClass` (static)    | `@AfterAll` (static)    |
-| Disable/ignore test         | `@Ignore`                 | `@Disabled`             |
-| Custom display name         | *(Not available)*         | `@DisplayName`          |
-| Repeat test multiple times  | *(Not available)*         | `@RepeatedTest`         |
+| Feature                    | JUnit 4                   | JUnit 5                 |
+|-----------------------------|---------------------------|--------------------------|
+| **Mark a test method**      | **`@Test`**               | **`@Test`**              |
+| **Run before each test**    | **`@Before`**             | **`@BeforeEach`**        |
+| **Run after each test**     | **`@After`**              | **`@AfterEach`**         |
+| **Run once before all tests** | **`@BeforeClass` (static)** | **`@BeforeAll` (static)** |
+| Run once after all tests    | `@AfterClass` (static)    | `@AfterAll` (static)     |
+| Disable/ignore test         | `@Ignore`                 | `@Disabled`              |
+| Custom display name         | *(Not available)*         | `@DisplayName`           |
+| Repeat test multiple times  | *(Not available)*         | `@RepeatedTest`          |
 | Parameterized tests         | `@RunWith(Parameterized.class)` | `@ParameterizedTest` |
-| Tagging/filtering tests     | *(Not available)*         | `@Tag`                  |
-| Nested test classes         | *(Not available)*         | `@Nested`               |
+| Tagging/filtering tests     | *(Not available)*         | `@Tag`                   |
+| Nested test classes         | *(Not available)*         | `@Nested`                |
 | Custom runner               | `@RunWith`                | *(Extension model instead)* |
-| Add custom test behavior    | `@Rule`                   | *(Replaced by extensions)* |
+| Add custom test behavior    | `@Rule`                   | *(Replaced by extensions* |
+
 
 
 ---------------------------------------------------------
