@@ -136,12 +136,7 @@ public void testIsExtremeTemperature() {
 ```
 2. Run the Test:
 
-```
-
-- All tests should pass, demonstrating the successful implementation of the functionality.
-
-
-
+All tests should pass, demonstrating the successful implementation of the functionality.
 
 ```java
 @Test
@@ -160,6 +155,7 @@ public void testFahrenheitToCelsius() {
 ```
 
 Testing celsiusToFahrenheit Method
+
 ```java
 @Test
 public void testCelsiusToFahrenheit() {
@@ -178,6 +174,7 @@ public void testCelsiusToFahrenheit() {
 
 ```
 Testing isExtremeTemperature Method
+
 ````java
 
 @Test
