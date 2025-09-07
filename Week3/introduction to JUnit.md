@@ -63,7 +63,7 @@ Unit tests require ongoing maintenance to remain effective. This involves:
 
 ---
 
-## 🔹 Install JUnit Plugin
+## 🔹 Install JUnit Plugin (specifically for older version of IntelliJ)
 1. Open **IntelliJ IDEA**.  
 2. Navigate to:  
    - **Windows/Linux**: `File -> Settings`  
