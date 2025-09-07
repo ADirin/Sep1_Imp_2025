@@ -57,39 +57,87 @@ Unit tests require ongoing maintenance to remain effective. This involves:
 - Removing obsolete tests that no longer apply.
 - Periodically reviewing and refactoring test code for clarity and effici
 
+## Example Application: Calculator
 
+Let's consider a simple example application: a calculator that performs basic arithmetic operations (addition, subtraction, multiplication, division).
 
-# JUnit Setup in Advance in IntelliJ  
+### Demonstration: Unit Testing in IntelliJ IDEA
 
----
+### Step 1: Create a New Java Project
 
-## 🔹 Install JUnit Plugin (specifically for older version of IntelliJ)
-1. Open **IntelliJ IDEA**.  
-2. Navigate to:  
-   - **Windows/Linux**: `File -> Settings`  
-   - **macOS**: `IntelliJ IDEA -> Preferences`  
-3. In the left sidebar, select **Plugins**.  
-4. In the **Marketplace** tab, search for **JUnit**.  
-5. Install the **JUnit plugin** (if not already installed).  
+1. Open IntelliJ IDEA and select "Create New Project" from the welcome screen.
 
----
+2. Choose "Java" from the left-hand menu and click "Next."
 
-## 🔹 Configure JUnit Library
-1. Open the **Project Structure** dialog:  
-   - Right-click your project in the **Project Explorer**  
-   - Select **Open Module Settings**  
-2. In the **Project Settings** section, click **Libraries**.  
-3. If JUnit is not listed:  
-   - Click the **+** button → Select **From Maven...**  
-   - Search for **`junit:junit`** in the search bar.  
-   - Choose the desired version, e.g.:  
-     - `junit:junit:4.12`  
-     - `org.junit.jupiter:junit-jupiter-api:5.8.0`  
-   - Click **OK** to add the library.  
+3. Fill in the project name and location, then click "Finish" to create the project.
 
----
+### Step 2: Write the Calculator Class
 
-## 🔹 Configure JUnit for Tests
-1. In the **Project Structure** dialog, go to **Modules** (left sidebar).  
-2. Open the **Dependencies** tab.  
-3. Verify that the **JUnit library** is listed in the **Module SDK** section.  
+Create a new Java class named `Calculator` with methods for addition, subtraction, multiplication, and division.
+
+```java
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return a / b;
+    }
+}
+
+### Step 3: Write Unit Tests
+Create a new Java class named CalculatorTest for unit tests.
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+
+    private final Calculator calculator = new Calculator();
+
+    @Test
+    public void testAddition() {
+        assertEquals(5, calculator.add(2, 3));
+    }
+
+    @Test
+    public void testSubtraction() {
+        assertEquals(1, calculator.subtract(3, 2));
+    }
+
+    @Test
+    public void testMultiplication() {
+        assertEquals(6, calculator.multiply(2, 3));
+    }
+
+    @Test
+    public void testDivision() {
+        assertEquals(2, calculator.divide(6, 3));
+    }
+
+    @Test
+    public void testDivisionByZero() {
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(6, 0));
+    }
+}
+````
+### Step 4: Run Unit Tests
+Right-click on the CalculatorTest class and select "Run 'CalculatorTest'".
+
+IntelliJ IDEA will execute the unit tests and display the results in the "Run" tool window.
+
+Green checkmarks indicate successful tests, while red crosses indicate failures.
+
