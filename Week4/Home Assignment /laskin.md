@@ -1,5 +1,5 @@
-#Week 4 in-class assignment
-This week’s assignment is a continuation of last week’s. If you have not completed it, you can find a sample code here as well…
+# Week 4 in-class assignment
+- This week’s assignment is a continuation of last week’s. If you have not completed it, you can find a sample code here as well…
 
 ### Your Tasks in this assignment.
 You need to extend last week’s assignment by adding JaCoCo code coverage to the temperature JUnit test report. To do this, follow these steps:
