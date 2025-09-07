@@ -73,7 +73,7 @@ Let's consider a simple example application: a calculator that performs basic ar
 2. Choose "Java" from the left-hand
   - Select the descriptive name for your project
   - Select the proper location based on your preferences
-  - in Build System select --Maven--
+  - in **Build System** select --Maven--
   - JDK "No need to change if already selected"
   - And then click --Create-- 
   
