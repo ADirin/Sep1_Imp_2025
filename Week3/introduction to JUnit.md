@@ -67,19 +67,19 @@ Create a new Java class named `Calculator` with methods for addition, subtractio
 
 ```java
 public class Calculator {
-    public int add(int a, int b) {
+    public int addMe(int a, int b) {
         return a + b;
     }
 
-    public int subtract(int a, int b) {
+    public int subMe(int a, int b) {
         return a - b;
     }
 
-    public int multiply(int a, int b) {
+    public int mulMe(int a, int b) {
         return a * b;
     }
 
-    public int divide(int a, int b) {
+    public int divMe(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Cannot divide by zero");
         }
@@ -96,37 +96,34 @@ Create a new Java class named CalculatorTest for unit tests.
 - Select Create Test and then select the functions you want to Test, for example in the following I have selected all the funtions...
 
 ````
+import org.junit.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculatorTest {
-
-    private final Calculator calculator = new Calculator();
-
+class CalculatorTest {
+    Calculator cal = new Calculator();
+    
     @Test
-    public void testAddition() {
-        assertEquals(5, calculator.add(2, 3));
+    void addMe() {
+        assertEquals(4, cal.addMe(2,2));
+
     }
 
     @Test
-    public void testSubtraction() {
-        assertEquals(1, calculator.subtract(3, 2));
+    void subMe() {
+        assertEquals(0, cal.subMe(2,2));
     }
 
     @Test
-    public void testMultiplication() {
-        assertEquals(6, calculator.multiply(2, 3));
+    void mulMe() {
+        assertEquals(6, cal.mulMe(2,3));
     }
 
     @Test
-    public void testDivision() {
-        assertEquals(2, calculator.divide(6, 3));
-    }
-
-    @Test
-    public void testDivisionByZero() {
-        assertThrows(IllegalArgumentException.class, () -> calculator.divide(6, 0));
+    void divMe() {
+        assertEquals(2, cal.divMe(4,2));
     }
 }
 ````
