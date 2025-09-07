@@ -6,8 +6,43 @@ Apache Maven is a build automation and project management tool primarily used fo
   - Standardized Build Process: Provides a consistent build process across projects.
   - Extensibility: Supports a wide range of plugins to extend its functionality.
   - Convention Over Configuration: Follows conventions to minimize the need for configuration.
+    
 # How Maven Works in IntelliJ IDEA
-* IntelliJ IDEA, a leading Java IDE, seamlessly integrates with Maven. It recognizes Maven projects and provides built-in support for executing Maven commands directly from the IDE. IntelliJ automatically downloads dependencies specified in the pom.xml file and manages the project's build lifecycle.
+* IntelliJ IDEA  recognizes Maven projects and provides built-in support for executing Maven commands directly from the IDE. IntelliJ automatically downloads dependencies specified in the pom.xml file and manages the project's build lifecycle.
+## Sample Intellij maven project structure
+```
+MyMavenProject/  
+├── pom.xml                     # Project Object Model (Maven configuration file)  
+├── src/  
+│   ├── main/  
+│   │   ├── java/               # Application source code  
+│   │   │   └── com/  
+│   │   │       └── example/  
+│   │   │           └── App.java  
+│   │   └── resources/          # Application resources (config files, etc.)  
+│   │       └── application.properties  
+│   └── test/  
+│       ├── java/               # Test source code  
+│       │   └── com/  
+│       │       └── example/  
+│       │           └── AppTest.java  
+│       └── resources/          # Test resources (if needed)  
+│  
+└── target/                     # Generated build output (compiled classes, JARs, reports)  
+
+
+```
+### 👉 This is the default Maven + IntelliJ project layout:
+
+pom.xml — the Maven build file.
+
+src/main/java — main application source code.
+
+src/test/java — unit tests (e.g., JUnit).
+
+resources — configuration files, properties, static resources.
+
+target — build output (created after running Maven).
 
 ## Key concpet of Maven
 
