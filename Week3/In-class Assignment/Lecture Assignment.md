@@ -11,7 +11,7 @@ Open IntelliJ IDEA and select "Create New Project" from the welcome screen.
   - Choose "Java" from the left-hand
   - Select the descriptive name for your project, for example 'OTP1_inclass_assignment'
   - Select the proper location based on your preferences
-  - In *Build System* select --Maven--
+  - In *Build System* select --**Maven**--
   - JDK "No need to change if already selected"
   - And then click *Create* 
 
