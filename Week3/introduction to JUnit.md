@@ -42,7 +42,7 @@ Integrating unit tests into a continuous integration (CI) pipeline is essential 
 7. Maintenance of Unit Tests
 Unit tests require ongoing maintenance to remain effective. This involves:
 
-## Example Application: Calculator (Lecture Demo)
+## Example Application: Calculator [(Lecture Demo)] (https://github.com/ADirin/Week3_lectureDemo_Cal_Degree.git)
 
 Let's consider a simple example application: a calculator that performs basic arithmetic operations (addition, subtraction, multiplication, division).
 
