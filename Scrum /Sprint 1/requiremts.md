@@ -64,6 +64,6 @@
 
 ----------------------------------------------------------------------
 
-### Review Meeting
+### 📝Review Meeting
 - <span style="background-color: #ffff99;">Scheduled for two weeks after the first lecture (19.08.2025).</span>  
 - All team members must participate.
