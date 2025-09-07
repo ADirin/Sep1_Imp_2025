@@ -1,21 +1,50 @@
 
-## Step-by-Step TDD Example: Temperature Conversion
+## Example: Temperature Conversion
 
-### Step 1: Set Up the Project in IntelliJ IDEA
+###  Implement the Functionality
+Now that the test is failing, implement the simplest solution to pass the test.
+
 1. **Create a New Project**:
    - Open IntelliJ IDEA.
    - Go to `File > New > Project`.
    - Choose `Java` as the project type.
-   - Name the project `TemperatureConverterTDD` and set the location.
+   - Name the project `OTP1_inclass_assignment` and set the location.
    - Click `Finish`.
 
+2. Create the TemperatureConverter Class:
+- Right-click on the src directory and select New > Java Class.
+- Name the class TemperatureConverter.
+- Implement the fahrenheitToCelsius method:
+
+```java
+public class TemperatureConverter {
+    public double fahrenheitToCelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+    }
+}
+````
+3. Implement the celsisusToFarenheit Method:
+- Add the celsiusToFahrenheit method to the TemperatureConverter class:
+```java
+public double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9 / 5) + 32;
+}
+
+````
+3. Implement the Method:
+- Add the following method to the TemperatureConverter class:
+```java
+public boolean isExtremeTemperature(double celsius) {
+    return celsius < -40 || celsius > 50;
+}
+
+````
+
+### Step 2: create the Test
+- Right click to the java class and select `Goto`-->`Test`-->`create new test`
+- Select the functions which you want to test
 ### Step 2: Write the First Test
 Start by writing a simple test to convert Fahrenheit to Celsius.
-
-1. **Create the Test Class**:
-   - Right-click on the `src` directory and select `New > Java Class`.
-   - Name the class `TemperatureConverterTest`.
-   - Add the following code to the test class:
 
    ```java
    import org.junit.Test;
@@ -29,32 +58,14 @@ Start by writing a simple test to convert Fahrenheit to Celsius.
            assertEquals(0, converter.fahrenheitToCelsius(32), 0.01);
        }
    }
-### Explanation:
 
+````
+### Explanation:
 - The test asserts that 32°F is equivalent to 0°C.
+
 2. **Run the Test:**
 - Right-click on the TemperatureConverterTest class and select Run 'TemperatureConverterTest'.
 - The test will fail since the TemperatureConverter class doesn't exist yet.
-
-### Step 3: Implement the Functionality
-Now that the test is failing, implement the simplest solution to pass the test.
-
-1. Create the TemperatureConverter Class:
-- Right-click on the src directory and select New > Java Class.
-- Name the class TemperatureConverter.
-- Implement the fahrenheitToCelsius method:
-
-```java
-public class TemperatureConverter {
-    public double fahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * 5 / 9;
-    }
-}
-````
-2. Run the Test Again:
-
-- Run the TemperatureConverterTest class.
-- The test should now pass.
 
 ### Step 4: Add More Tests
 Following TDD, we will now write more tests for other functionalities.
@@ -74,17 +85,8 @@ Explanation:
 - This test checks if 0°C is converted to 32°F.
 2. Run the Test:
 - The test will fail since the celsiusToFahrenheit method is not yet implemented.
-3. Implement the Method:
-- Add the celsiusToFahrenheit method to the TemperatureConverter class:
-```java
-public double celsiusToFahrenheit(double celsius) {
-    return (celsius * 9 / 5) + 32;
-}
-```
 
-4. Run the Test Again:
 
-- The test should pass now that the method is implemented.
 ### Step 5: Add a Test for Edge Cases
 1. Test for Extreme Temperatures:
 - Add a test method to check for extreme temperatures:
@@ -101,12 +103,6 @@ public void testIsExtremeTemperature() {
 2. Run the Test:
 
 - The test will fail because the isExtremeTemperature method is not implemented.
-3. Implement the Method:
-- Add the following method to the TemperatureConverter class:
-```java
-public boolean isExtremeTemperature(double celsius) {
-    return celsius < -40 || celsius > 50;
-}
 ```
 4. Run the Test Again:
 
