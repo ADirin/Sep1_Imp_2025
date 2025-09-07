@@ -162,5 +162,5 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 ---------------------------------------------------------
 
 ### 📌Lecture Demo (Cal/ Degree Duration)
-- (Source Code) https://github.com/ADirin/Week3_lectureDemo_Cal_Degree.git
+- [Source Code](https://github.com/ADirin/Week3_lectureDemo_Cal_Degree.git)
 
