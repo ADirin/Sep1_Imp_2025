@@ -1,5 +1,5 @@
 # Unit Test in JAVA (JUNIT)
- - A unit test is an automated piece of code that invokes the method being tested and then checks some assumptions about the logical behavior of that method.
+A unit test is an automated piece of code that invokes the method being tested and then checks some assumptions about the logical behavior of that method.
 ## Why Unit Test
 - Ensure that your code works
 - At the function and method level
