@@ -125,7 +125,7 @@ Configuring Plugins:
 - version: The version of the plugin.
 - configuration: Plugin-specific configuration options.
 
-## Example of Plagin (JACOCO)
+## Example of Plugin (JACOCO)
 
 ```xml
  <build>
