@@ -1,37 +1,41 @@
-#Week 4 in-class assignment is the continuetion of last week assignment, In case you have not done it, the you can find a sample code also here...
+#Week 4 in-class assignment
+This week’s assignment is a continuation of last week’s. If you have not completed it, you can find a sample code here as well…
 
 ### Your Tasks in this assignment.
-You have to extend the task last week assignment by adding the *JACOCO*code coverage to the tempreture junit test report. to do that follow the following steps.
-- Copy the following sample jacoco pluging and add it into you **POM.XML** as shown during the lecture
- ```
-<build>
-<plugins>
-<plugin>
-<groupId>org.jacoco</groupId>
-<artifactId>jacoco-maven-plugin</artifactId>
-<version>0.7.7.201606060606</version>
-<executions>
-<execution>
-<goals>
-<goal>prepare-agent</goal>
-</goals>
-</execution>
-<execution>
-<id>report</id>
-<phase>prepare-package</phase>
-<goals>
-<goal>report</goal>
-</goals>
-</execution>
-</executions>
-</plugin>
-</plugins>
-</build>  ```
-- Run  maven--> clean-maven and  -->maven install
-- Make sure the Target folder is created
-   - open the index.html
-   - Upload it to the public html folder and share the link in the moodle folder 
+You need to extend last week’s assignment by adding JaCoCo code coverage to the temperature JUnit test report. To do this, follow these steps:
 
+- Copy the following sample JaCoCo plugin and add it to your pom.xml, as demonstrated during the lecture.
+
+ ```
+         <plugins>
+            <!-- JaCoCo plugin for code coverage -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.12</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+````
+- Run Maven → clean and then Maven → install
+
+- Make sure the target folder is created Open the index.html file and make sure the code coverage is done
+
+- Upload it to the public_html folder and share the link in the Moodle folder (Follow the exact step that is shared during the lecture)
+
+- ---------------------------------------------------------------------------
 
 ## Example: Temperature Conversion
 
