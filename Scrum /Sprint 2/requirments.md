@@ -6,7 +6,7 @@
 - <span style="background-color: #ffff99;">In this course, the focus is more on the process of developing the product than on the final product itself.</span> Don’t worry about trying to build everything in a single sprint, that’s not the goal.  
 - <span style="background-color: #ffff99;">The lecturer will take the role of Product Owner.</span> At the end of each sprint, your work will be reviewed during a dedicated Zoom session for each team, and all team members are expected to participate in the review session.
 - Despite assigning points to each task, this does not mean that a team can choose some tasks and ignore others just to earn passing points. The team must implement all tasks defined in the requirements for each sprint.
-
+- Lectures help you implement the tasks smoothly, so it is highly recommended to attend them and complete the in-class assignments.
 -----------------------------------------------------------------------------------
 
 ## 💡Objective of the sprint2
@@ -50,11 +50,6 @@ The primary objective of this sprint is to lay the foundation for the applicatio
 
 ---
 
-### 🔹 Use Maven for Build Management
-- Set up a Maven project structure (if using Java-based stack).  
-- Manage dependencies and plugins via **pom.xml**.  
-
----
 
 ### ✅🔹 Configure Code Coverage Testing (3 points)
 - **Use JaCoCo**: Integrate to generate coverage reports.  
