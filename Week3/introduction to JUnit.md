@@ -57,19 +57,23 @@ Unit tests require ongoing maintenance to remain effective. This involves:
 - Removing obsolete tests that no longer apply.
 - Periodically reviewing and refactoring test code for clarity and effici
 
-## Example Application: Calculator
+## Example Application: Calculator (Lecture Demo)
 
 Let's consider a simple example application: a calculator that performs basic arithmetic operations (addition, subtraction, multiplication, division).
 
 ### Demonstration: Unit Testing in IntelliJ IDEA
 
-### Step 1: Create a New Java Project
+### Step 1: Create a New Maven Java Project
 
 1. Open IntelliJ IDEA and select "Create New Project" from the welcome screen.
 
-2. Choose "Java" from the left-hand menu and click "Next."
-
-3. Fill in the project name and location, then click "Finish" to create the project.
+2. Choose "Java" from the left-hand
+  - Select the descriptive name for your project
+  - Select the proper location based on your preferences
+  - in Build System select --Maven--
+  - JDK "No need to change if already selected"
+  - And then click --Create-- 
+  
 
 ### Step 2: Write the Calculator Class
 
@@ -96,10 +100,16 @@ public class Calculator {
         return a / b;
     }
 }
-
+````
 ### Step 3: Write Unit Tests
 Create a new Java class named CalculatorTest for unit tests.
+- In your code editor (java code where you wrote the functions)
+- Right click to the public class...
+- A drop list appears select th --Goto--
+- then select --Test--
+- Select Create Test and then select the functions you want to Test, for example in the following I have selected all the funtions...
 
+````
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
