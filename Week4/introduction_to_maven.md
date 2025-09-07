@@ -134,3 +134,7 @@ Maven has a default build lifecycle consisting of several phases. Each phase rep
 - verify: Perform any necessary verification (e.g., integration tests).
 - install: Install the package into the local repository.
 - deploy: Deploy the package to a remote repository.
+--------------------------------------------------------------
+### Source code of Lecture Demo (SpeedCalculator)
+- https://github.com/ADirin/week4_inclass_speedcalculator
+  
