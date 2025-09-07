@@ -156,72 +156,24 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 
 -----------------
 
-# 📌 JUnit Annotations Cheat Sheet  
+# 📌 JUnit 4 vs JUnit 5 Annotations  
 
----
+| Purpose                     | JUnit 4 Annotation         | JUnit 5 Annotation       |
+|-----------------------------|----------------------------|--------------------------|
+| Mark a test method          | `@Test`                   | `@Test`                 |
+| Run before each test        | `@Before`                 | `@BeforeEach`           |
+| Run after each test         | `@After`                  | `@AfterEach`            |
+| Run once before all tests   | `@BeforeClass` (static)   | `@BeforeAll` (static)   |
+| Run once after all tests    | `@AfterClass` (static)    | `@AfterAll` (static)    |
+| Disable/ignore test         | `@Ignore`                 | `@Disabled`             |
+| Custom display name         | *(Not available)*         | `@DisplayName`          |
+| Repeat test multiple times  | *(Not available)*         | `@RepeatedTest`         |
+| Parameterized tests         | `@RunWith(Parameterized.class)` | `@ParameterizedTest` |
+| Tagging/filtering tests     | *(Not available)*         | `@Tag`                  |
+| Nested test classes         | *(Not available)*         | `@Nested`               |
+| Custom runner               | `@RunWith`                | *(Extension model instead)* |
+| Add custom test behavior    | `@Rule`                   | *(Replaced by extensions)* |
 
-## 🔹 JUnit 5 (Jupiter)  
-
-- **`@Test`**  
-  Marks a method as a test case.  
-
-- **`@BeforeEach`**  
-  Runs before each test method (used for setup).  
-
-- **`@AfterEach`**  
-  Runs after each test method (used for cleanup).  
-
-- **`@BeforeAll`**  
-  Runs once before all test methods in the class (must be `static`).  
-
-- **`@AfterAll`**  
-  Runs once after all test methods in the class (must be `static`).  
-
-- **`@Disabled`**  
-  Skips (disables) the test method or class.  
-
-- **`@DisplayName`**  
-  Provides a custom name for a test.  
-
-- **`@RepeatedTest`**  
-  Runs the same test multiple times.  
-
-- **`@ParameterizedTest`**  
-  Runs a test with different input values.  
-
-- **`@Tag`**  
-  Assigns tags to tests for filtering.  
-
-- **`@Nested`**  
-  Allows structuring tests with inner classes.  
-
----
-
-## 🔹 JUnit 4  
-
-- **`@Test`**  
-  Marks a method as a test case.  
-
-- **`@Before`**  
-  Runs before each test method (setup).  
-
-- **`@After`**  
-  Runs after each test method (cleanup).  
-
-- **`@BeforeClass`**  
-  Runs once before all test methods in the class (must be `static`).  
-
-- **`@AfterClass`**  
-  Runs once after all test methods in the class (must be `static`).  
-
-- **`@Ignore`**  
-  Skips (ignores) the test method or class.  
-
-- **`@RunWith`**  
-  Specifies a custom test runner (e.g., `@RunWith(Parameterized.class)`).  
-
-- **`@Rule`**  
-  Adds custom behavior to tests (e.g., TemporaryFolder, ExpectedException).  
 
 
 
