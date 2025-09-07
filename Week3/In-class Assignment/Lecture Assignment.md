@@ -6,6 +6,7 @@ Learn how to create and run unit tests using JUnit in IntelliJ IDEA by implement
 ---
 
 ## Instructions
+### Create a Maven project in Intellij.  
 
 ### Step 1: Create the `TemperatureConverter` Class
 1. **Create a new Java class** in your IntelliJ project and name it `TemperatureConverter`.
