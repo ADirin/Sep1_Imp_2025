@@ -2,7 +2,7 @@
 **AD/ 2025**
 
 ----------------------------------------------------------------
-** ⚠️ NOTE FOR STUDENTS:**  
+⚠️ ** NOTE FOR STUDENTS:**  
 - <span style="background-color: #ffff99;">In this course, the focus is more on the process of developing the product than on the final product itself.</span> Don’t worry about trying to build everything in a single sprint, that’s not the goal.  
 - <span style="background-color: #ffff99;">The lecturer will take the role of Product Owner.</span> At the end of each sprint, your work will be reviewed during a dedicated Zoom session for each team, and all team members are expected to participate in the review session.
 - Despite assigning points to each task, this does not mean that a team can choose some tasks and ignore others just to earn passing points. The team must implement all tasks defined in the requirements for each sprint.
