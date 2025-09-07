@@ -175,5 +175,8 @@ Green checkmarks indicate successful tests, while red crosses indicate failures.
 | Add custom test behavior    | `@Rule`                   | *(Replaced by extensions)* |
 
 
+---------------------------------------------------------
 
+### Lecture Demo (Cal/ Degree Duration)
+- (Source Code) https://github.com/ADirin/Week3_lectureDemo_Cal_Degree.git
 
