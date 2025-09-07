@@ -26,32 +26,32 @@ Before writing any tests, it is essential to plan what needs to be tested. This 
 - Identifying the components or functions that require testing.
 - Determining the expected behavior of these components.
 - Establishing testing criteria and success metrics.
-3. Writing Unit Tests
+2. Writing Unit Tests
 Once planning is complete, the next step is to write the unit tests. This includes:
 - Selecting a testing framework (e.g., JUnit for Java, NUnit for .NET, or pytest for Python).
 - Writing test cases that cover various scenarios, including edge cases and error conditions.
 - Ensuring that each test case is independent and can run in isolation.
-4. Running Unit Tests
+3. Running Unit Tests
 After writing the tests, they need to be executed. This step involves:
 - Running the test suite using the chosen testing framework.
 - Observing the results to determine which tests pass and which fail.
 - Analyzing any failures to understand the underlying issues.
-5. Debugging and Fixing Issues
+4. Debugging and Fixing Issues
 If any tests fail, debugging is necessary. This includes:
 - Investigating the code to identify the root cause of the failure.
 - Making the necessary code changes to fix the identified issues.
 - Rerunning the tests to ensure that the fixes have resolved the failures.
-6. Refactoring Code
+5. Refactoring Code
 Once the tests pass, consider refactoring the code. This step involves:
 - Improving the code structure without changing its external behavior.
 - Ensuring that existing unit tests still pass after refactoring.
 - Adding new tests if new functionality or changes were introduced.
-7. Continuous Integration
+6. Continuous Integration
 Integrating unit tests into a continuous integration (CI) pipeline is essential for maintaining code quality. This includes:
 - Automating the execution of unit tests whenever new code is committed.
 - Ensuring that the build process fails if any unit tests do not pass.
 - Regularly reviewing test coverage and adding tests as needed.
-8. Maintenance of Unit Tests
+7. Maintenance of Unit Tests
 Unit tests require ongoing maintenance to remain effective. This involves:
 - Updating tests when the codebase changes or when new features are added.
 - Removing obsolete tests that no longer apply.
