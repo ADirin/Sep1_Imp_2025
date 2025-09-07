@@ -59,7 +59,7 @@ The primary objective of this sprint is to lay the foundation for the applicatio
 
 ---
 
-### 🔹 Prepare for Sprint Review
+### 📝🔹 Prepare for Sprint Review
 - **Demonstration Readiness**: Be ready to present:  
   - Database structure and data  
   - Progress on user interface  
