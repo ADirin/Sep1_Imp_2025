@@ -16,17 +16,15 @@ The primary objective of this sprint is to lay the foundation for the applicatio
 - Initiating the user interface development  
 - Integrating essential development tools such as **unit testing**, **Maven dependencies**, and **code coverage reporting**  
 
-The **Scrum Master** will oversee team participation, AI application use, backlog updates, Sprint 1 review preparation, and Sprint 2 planning submission.
-
 ---------------------------------------------------------------
 
 ## Sprint 2 Scrum Master Tasks
----
 
-## Sprint 2 Implementation Tasks
-While teams are free to determine their own approach for Sprint 2, the following examples are provided for guidance. The prioritization and sequencing of tasks will be established by the Scrum Master in collaboration with the development team.  
+- The **Scrum Master** will oversee team participation, AI application use, backlog updates, Sprint 1 review preparation, and Sprint 2 planning submission.
 
----
+- While teams are free to determine their own approach for Sprint 2, the following examples are provided for guidance. The prioritization and sequencing of tasks will be established by the Scrum Master in collaboration with the development team.  
+
+---------------------------------------------------------------
 
 ### ✅🔹 Implementing the Database (2 points)
 - **Design Database Schema**: Based on the product requirements, design and create the database schema (entities, attributes, relationships).  
