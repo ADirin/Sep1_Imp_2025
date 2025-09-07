@@ -73,4 +73,4 @@ While teams are free to determine their own approach for Sprint 2, the following
 
 ---
 
-## 📂 Sample Project Folder Structure (Maven + JaCoCo)
+## 📂 Sample Project Folder Structure (Maven + JaCoCo) https://github.com/ADirin/Sep1_Imp_2025/blob/main/Week4/introduction_to_maven.md
