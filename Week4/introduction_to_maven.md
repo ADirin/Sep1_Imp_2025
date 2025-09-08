@@ -44,7 +44,7 @@ MyMavenProject/
 ## Key concpet of Maven
 
 ### 1. Project Object Model (POM)
-The pom.xml file is the core of a Maven project. It contains the project’s configuration details such as dependencies, plugins, goals, and build settings.
+The **pom.xml** file is the core of a Maven project. It contains the project’s configuration details such as dependencies, plugins, goals, and build settings.
 
 Basic Structure of pom.xml:
 ```xml
