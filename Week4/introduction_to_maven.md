@@ -43,7 +43,7 @@ MyMavenProject/
 
 ## Key concpet of Maven
 
-1. Project Object Model (POM)
+### 1. Project Object Model (POM)
 The pom.xml file is the core of a Maven project. It contains the project’s configuration details such as dependencies, plugins, goals, and build settings.
 
 Basic Structure of pom.xml:
@@ -76,8 +76,8 @@ Basic Structure of pom.xml:
 - dependencies: Lists the external libraries required by the project.
 - build: Contains build settings and plugins.
 
-2. Dependencies
-Dependencies are external libraries or frameworks that your project needs to compile and run. Maven manages these dependencies and their versions.
+### 2. Dependencies
+**Dependencies** are external libraries or frameworks that your project needs to compile and run. Maven manages these dependencies and their versions.
 
 - To download dependencies, it is not needed to visit the official website of each software. 
   - It is enough to visit
@@ -100,8 +100,8 @@ Adding Dependencies:
 - version: The version of the dependency.
 - scope: The scope of the dependency (e.g., compile, test).
 
-3. Plugins
-Plugins extend Maven's functionality. They perform specific tasks such as compiling code, running tests, packaging applications, etc.
+### 3. Plugins
+**Plugins** extend Maven's functionality. They perform specific tasks such as compiling code, running tests, packaging applications, etc.
 
 Configuring Plugins:
 
