@@ -42,7 +42,7 @@ Integrating unit tests into a continuous integration (CI) pipeline is essential 
 7. Maintenance of Unit Tests
 Unit tests require ongoing maintenance to remain effective. This involves:
 
-## Example Application: Calculator 
+# Example Application: Calculator 
 
 
 Let's consider a simple example application: a calculator that performs basic arithmetic operations (addition, subtraction, multiplication, division).
@@ -56,9 +56,9 @@ Let's consider a simple example application: a calculator that performs basic ar
 2. Choose "Java" from the left-hand
   - Select the descriptive name for your project
   - Select the proper location based on your preferences
-  - in **Build System** select --Maven--
+  - in **Build System** select *--Maven--*
   - JDK "No need to change if already selected"
-  - And then click --Create-- 
+  - And then click *--Create--* 
   
 
 ### Step 2: Write the Calculator Class
@@ -91,9 +91,9 @@ public class Calculator {
 Create a new Java class named CalculatorTest for unit tests.
 - In your code editor (java code where you wrote the functions)
 - Right click to the public class...
-- A drop list appears select th --Goto--
-- then select --Test--
-- Select Create Test and then select the functions you want to Test, for example in the following I have selected all the funtions...
+- A drop list appears select th **--Goto--**
+- then select **--Test--**
+- Select **Create Test** and then select the functions you want to Test, for example in the following I have selected all the funtions...
 
 ````
 import org.junit.Before;
