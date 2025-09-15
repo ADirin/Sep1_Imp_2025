@@ -1,4 +1,4 @@
-# Introduction to Jenkins 
+# 📝 Introduction to Jenkins 
 ### 👉 **Note**: In the new version of Jenkins, the location and design of the settings have changed, but the functionality remains the same. I recommend following along with the lecture or the provided video tutorial when I configure the settings.
 
 
