@@ -1,4 +1,5 @@
-# Introduction to Jenkins
+# Introduction to Jenkins 
+### **Note**: In the new version of Jenkins, the location and design of the settings have changed, but the functionality remains the same. I recommend following along with the lecture or the provided video tutorial when I configure the settings.
 
 
 ## What is Jenkins?
@@ -31,7 +32,7 @@ This flexibility makes Jenkins suitable for a variety of software development wo
 # How to Use Jenkins
    # Essential Jenkins settings
 
-###  Installation (*Only for those who have not done assignment 2*)
+###  Installation (*Only for those who have not yet done assignment 2*)
 
 1. Download Jenkins from the official website: [https://www.jenkins.io/download/](https://www.jenkins.io/download/).
 2. Follow the installation instructions for your operating system.
