@@ -130,6 +130,11 @@ Follow these instructions to configure **JDK**, **Maven**, and **Git** in your J
 
 
 ------------------------------------------------------------------
+
+# Lecture Activity (Ignor the rest)
+
+
+
 ## Step 3: Practical Example
 ### Step 1: Create a Test Job
 1. Run the jenkins in your local machine:
