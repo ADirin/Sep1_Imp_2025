@@ -131,7 +131,7 @@ Follow these instructions to configure **JDK**, **Maven**, and **Git** in your J
 
 ------------------------------------------------------------------
 
-# 📌Lecture Activity (Ignor the rest)
+# 📌**Lecture Activity** (*Ignor the rest*)
 
 
 
