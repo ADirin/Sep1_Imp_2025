@@ -27,19 +27,19 @@ Create a JaCoCo code coverage report for the entire project to ensure your tests
 
 4. Set Up Jenkins and a JaCoCo Report (Optional)
 
-  - In Jenkins, create a new Freestyle project item.
+    - In Jenkins, create a new Freestyle project item.
 
-  - Under Source Code Management, add your GitHub repository link.
+    - Under Source Code Management, add your GitHub repository link.
 
-  - Configure the build to run your tests (e.g., using an mvn test or mvn clean verify command).
+    - Configure the build to run your tests (e.g., using an mvn test or mvn clean verify command).
 
-  - After a successful test run, configure the post-build action to publish the JaCoCo coverage report.
+    - After a successful test run, configure the post-build action to publish the JaCoCo coverage report.
 
 ## Submission
 1. Screenshot: Take a screenshot of the successful test report in Jenkins. Ensure your name is visible in the screenshot (e.g., in the Jenkins job name, browser tab, or via a watermark).
 
 2. Upload: Submit the following two items to the designated Moodle folder:
 
-  - The screenshot of the Jenkins test report.
+    - The screenshot of the Jenkins test report.
 
-  - The link to your GitHub repository.
+    - The link to your GitHub repository.
