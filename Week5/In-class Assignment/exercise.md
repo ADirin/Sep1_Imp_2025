@@ -40,6 +40,6 @@ Create a JaCoCo code coverage report for the entire project to ensure your tests
 
 2. Upload: Submit the following two items to the designated Moodle folder:
 
-- The screenshot of the Jenkins test report.
+-- The screenshot of the Jenkins test report.
 
-- The link to your GitHub repository.
+-- The link to your GitHub repository.
