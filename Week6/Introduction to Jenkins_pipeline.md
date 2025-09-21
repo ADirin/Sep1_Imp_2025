@@ -61,99 +61,7 @@ There are several ways to apply pipelines in Jenkins, each with its own advantag
 Each method has its own use cases and benefits, so you can choose the one that best fits your project's needs.
 
 
-
-## Example with Multiple Stages:
-Sample pom.xml
-```xml
-
-   
-    <properties>
-        <maven.compiler.release>21</maven.compiler.release>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.11.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <finalName>cal</finalName>
-        <plugins>
-            <!-- Maven Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-                <configuration>
-                    <release>23</release>
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                    </compilerArgs>
-                </configuration>
-            </plugin>
-
-            <!-- Maven Jar Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.4.1</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>Cal</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-
-            <!-- JaCoCo Code Coverage Plugin -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.12</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Surefire Plugin for Running Tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-
-```
+## Example Jenkins pipeline:
 
 ```groovy
 pipeline {
@@ -177,7 +85,6 @@ pipeline {
     }
 }
 ```
-
 
 
 
@@ -230,8 +137,7 @@ pipeline {
     ```
 # Steps to Ensure You See the Stages:
 
-## 1. Ensure You're Using a Multibranch or Pipeline Job
-Make sure your Jenkins job is of type **Pipeline** (or **Multibranch Pipeline**). The pipeline view works best with these types of jobs.
+## 1. Ensure You're Using a  Pipeline Job
 
 ## 2. Make Sure You Have Jenkins Blue Ocean Installed (Optional)
 **Blue Ocean** is a plugin that provides a better UI for Jenkins pipelines, making it easier to visualize stages.
@@ -249,19 +155,6 @@ If you don't have it installed:
 Even without **Blue Ocean**, the regular Jenkins UI should show a **Stages** tab or **Pipeline Steps** in the pipeline build details, where you can see each of your pipeline stages and their status (e.g., Passed, Failed, etc.).
 ----------------------------------------------------------------------------------------------
 
-2. **Create a Pipeline Job in Jenkins**
-   - Go to Jenkins dashboard.
-   - Click on "New Item".
-   - Enter a job name.
-   - Select "Pipeline" and click "OK".
-
-3. **Configure the Pipeline**
-   - Under the "Pipeline" section, set "Definition" to "Pipeline script from SCM".
-   - Select "Git" as SCM and provide your GitHub repository URL.
-   - In "Script Path", enter `Jenkinsfile`.
-
-4. **Save and Run**
-   - Save the job and click "Build Now" to run the pipeline.
 
 ### Sequence Diagram
 
