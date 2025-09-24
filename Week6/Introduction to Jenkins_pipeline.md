@@ -191,6 +191,9 @@ sequenceDiagram
     ```groovy
     pipeline {
         agent any
+    tools{
+        maven 'Maven3' // Maven3 is the name of *your own* defined maven name in Jenkins.
+    }
         stages {
             stage('Checkout') {
                 steps {
@@ -199,17 +202,17 @@ sequenceDiagram
             }
             stage('Build') {
                 steps {
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'
                 }
             }
             stage('Test') {
                 steps {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
             stage('Code Coverage') {
                 steps {
-                    sh 'mvn jacoco:report'
+                    bat 'mvn jacoco:report'
                 }
             }
             stage('Publish Test Results') {
