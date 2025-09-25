@@ -172,6 +172,23 @@ Additional pluging to create a juit test report as XML.
 
 ```
 
+**Finally the main class definsion plugin
+```
+<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>TimeCal</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+
+```
 
 4. Build Lifecycle
 Maven has a default build lifecycle consisting of several phases. Each phase represents a stage in the build process.
