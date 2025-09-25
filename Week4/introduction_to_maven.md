@@ -155,6 +155,24 @@ Configuring Plugins:
 
 
 ```
+
+Additional pluging to create a juit test report as XML.
+```xml
+
+ <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+```
+
+
 4. Build Lifecycle
 Maven has a default build lifecycle consisting of several phases. Each phase represents a stage in the build process.
 
