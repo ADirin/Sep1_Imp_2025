@@ -1,6 +1,22 @@
 # JavaFX Docker Image with Xming (Windows)
 
 This guide explains how to build a Docker image for a JavaFX application and run it with X11 forwarding via Xming on Windows.
+This setup shows how to package and run a JavaFX application inside Docker while displaying the GUI on Windows using Xming.
+The process is:
+
+         1. Build a fat JAR with Maven (using maven-shade-plugin).
+
+         2. Create a Docker image with OpenJDK 17.
+
+         3. Install GUI/X11 libraries inside the container.
+
+         4. Download and extract the JavaFX SDK.
+
+         5. Copy the application JAR into the container.
+
+         6. Run the JavaFX app with --module-path pointing to the JavaFX SDK.
+
+         7. Forward the display to Windows using Xming.
 
 ---
 
