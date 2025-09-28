@@ -3,7 +3,7 @@
 **Date:** AD/2025
 
 
-# Sprint 4 Objectives and Scrum Master Tasks  
+## Sprint 4 Objectives and Scrum Master Tasks  
 
 ## 📌 Objectives of Sprint 4  
 - Finalize functionality of the prototype.  
