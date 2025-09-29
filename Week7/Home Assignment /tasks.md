@@ -1,5 +1,5 @@
 
-# NOTE: Optional Assignmengt for all 
+# NOTE: Optional Assignmengt for all (**Note** this is not a lecture assignment)
 
 # Lecture Assignment: Weekly Sports Time Tracker Application
 
@@ -53,5 +53,16 @@ docker run -it --rm your-dockerhub-username/sports-time-tracker:latest
 2. Code Quality: Is the code well-organized, readable, and properly commented?
 3. GitHub Practices: Are commits meaningful? Is the repository well-structured?
 4. Jenkins Pipeline: Is the pipeline correctly set up and functional?
-5. Docker Implementation: Is the Docker image created and running successfully in the VM?
+
+--------------------------
+
+Convert your temperature converter into a JavaFX application. Configure Jenkins to build and deploy the application to hub.docker.com. Finally, test your Docker image locally using the following command:
+````
+docker run --rm your_local_image_name
+````
+
+## Submision
+
+submit the screenshot of the image and the screenshot along with the github repo
+6. Docker Implementation: Is the Docker image created and running successfully in the VM?
 
