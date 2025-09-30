@@ -312,3 +312,18 @@ pipeline {
 
 
 ```
+## Q&A
+Make sure the following steps are taken prior to the execution of the file
+1.  Ensure JavaFX SDK is downloaded and extracted for example  `C:\javafx-sdk-17.0.16\`
+2.  Add JavaFX SDK to Project Libraries
+         - Go to File > Project Structure > Libraries
+         - `C:\javafx-sdk-17.0.16\lib`
+         - Select all .jar files inside the lib folder
+         - Click OK and apply changes
+You should have a folder
+3. Edit Run Configuration
+         - Go to Run > Edit Configurations
+         - Select your main class (TravelTimeCalculator)
+         - In the VM options field, add:
+         `--module-path "C:\javafx-sdk-17.0.16\lib" --add-modules javafx.controls,javafx.fxml
+`
