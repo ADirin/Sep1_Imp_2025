@@ -61,15 +61,18 @@ docker run -e DISPLAY=host.docker.internal:0 \
 ````
 ----------------------------------------------------------------------------------------------
 
-## 1. Project Structure
+## 1. Example JAVAFX Project Structure
 
 Your project should look like this:
 
+````
 javafx-celsius-converter/
 ├─ src/main/java/com/example/Main.java
 ├─ pom.xml
 └─ target/
-
+└─ Jenkinsfiles
+└─ Dockfile
+````
 
 - `Main.java` contains your JavaFX application.
 - `pom.xml` contains Maven configuration to build a **fat JAR** with JavaFX dependencies.
