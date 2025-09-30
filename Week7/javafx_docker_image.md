@@ -19,6 +19,26 @@ The process is:
          7. Forward the display to Windows using Xming.
 
 ---
+## Short instruction for mac users
+
+macOS: Install & Configure XQuartz
+Install:
+```
+brew install --cask xquartz
+````
+Start:
+````
+open -a XQuartz
+````
+Enable network access:
+````
+Open XQuartz Preferences (Cmd + ,) → Security → Check Allow connections from network clients
+````
+Restart:
+````
+open -a XQuartz
+````
+----------------------------------------------------------------------------------------------
 
 ## 1. Project Structure
 
