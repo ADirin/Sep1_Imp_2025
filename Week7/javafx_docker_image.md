@@ -327,4 +327,4 @@ You should have a folder
          - In the VM options field, add:
          `--module-path "C:\javafx-sdk-17.0.16\lib" --add-modules javafx.controls,javafx.fxml
 `
-[Run-Edit Config](/Images/Edit_con.jpg)
+[Run-Edit Config](/Images/Edit_cong.jpg)
