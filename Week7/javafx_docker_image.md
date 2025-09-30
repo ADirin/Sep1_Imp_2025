@@ -19,9 +19,9 @@ The process is:
          7. Forward the display to Windows using Xming.
 
 ---
-## Short instruction for mac users
+## Short instruction for **MAC users**
 
-macOS: Install & Configure XQuartz
+macOS: Install & Configure **XQuartz**
 Install:
 ```
 brew install --cask xquartz
@@ -37,6 +37,27 @@ Open XQuartz Preferences (Cmd + ,) → Security → Check Allow connections from
 Restart:
 ````
 open -a XQuartz
+````
+
+## Configure X11 on the System
+- Set DISPLAY Variable
+
+macOS:
+````
+export DISPLAY=:0
+````
+
+Allow X11 Connections
+````
+xhost +localhost
+````
+## Run the JavaFX Application in Docker
+````
+docker run -e DISPLAY=host.docker.internal:0 \
+           -e DB_HOST=host.docker.internal \
+           -p 3000:3000 \
+           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           flash_card
 ````
 ----------------------------------------------------------------------------------------------
 
