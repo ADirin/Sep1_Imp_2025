@@ -59,6 +59,17 @@ docker run -e DISPLAY=host.docker.internal:0 \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            flash_card
 ````
+## Why We Need DB_HOST and Port 3000
+
+### DB_HOST
+- The DB_HOST environment variable specifies the database server's address. Inside Docker, localhost refers to the container, not the host. Setting DB_HOST=host.docker.internal ensures the JavaFX app connects to the MariaDB database on the host machine.
+
+
+### Port 3000
+- Port 3000 is used for communication with external web services (e.g., OAuth providers).
+Mapping with -p 3000:3000 ensures authentication redirects work properly.
+
+
 ----------------------------------------------------------------------------------------------
 
 ## 1. Example JAVAFX Project Structure
