@@ -15,7 +15,7 @@ After implementing the functions and run the jenkins pipeline :
 
   - Run the  Docker image.
 
-## Submision 
+## Submission 
   - Take screenshot of the Jenkins stages performance (only the graphics, not the console text).
 
   - Take screenshot of the docker image UI performance.
