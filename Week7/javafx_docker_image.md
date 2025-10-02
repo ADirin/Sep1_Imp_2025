@@ -1,9 +1,9 @@
 # JavaFX Docker Image with Xming (Windows)
 
-- JavaFX apps need a graphical display to show windows and UI. Docker containers (especially Linux-based ones) don’t have a display of their own. So, we tell the container to send the GUI to your Windows desktop using:
-
-That is why we need to install **VcXsrv** or **Xming** on Windows to run a JavaFX app in Docker
-
+- JavaFX apps need a graphical display to show windows and UI. Docker containers (especially Linux-based ones) don’t have a display of their own.
+- So, we tell the container to send the GUI to your Windows desktop using:
+- that is why we need to install **VcXsrv** or **Xming** on Windows to run a JavaFX app in Docker
+- These tools receive the GUI output from the container and show it on your screen.
 
 
 ## The process is:
