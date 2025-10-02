@@ -371,7 +371,7 @@ pipeline {
 
 
 ```
-## Q&A
+## Q&A and Important Note
 Make sure the following steps are taken prior to the execution of the file
 1.  Ensure JavaFX SDK is downloaded and extracted for example  `C:\javafx-sdk-17.0.16\`
 2.  Add JavaFX SDK to Project Libraries
@@ -385,5 +385,7 @@ You should have a folder
          - Select your main class (TravelTimeCalculator)
          - In the VM options field, add:
          `--module-path "C:\javafx-sdk-17.0.16\lib" --add-modules javafx.controls,javafx.fxml
-`
+
+4.  The code that is shared in this tutorial (githun site) are sample you have to modify based on your own project, for exmple the Jenkins script (Jenkinsfile) or dockerfile.
+   
 [Run-Edit Config](/Images/Edit_cong.jpg)
