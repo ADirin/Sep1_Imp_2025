@@ -189,44 +189,70 @@ sequenceDiagram
    - Write the following script:
 
     ```groovy
-    pipeline {
-        agent any
+   pipeline {
+    agent any
     tools{
-        maven 'Maven3' // Maven3 is the name of *your own* defined maven name in Jenkins.
+    maven 'Maven3'
     }
-        stages {
-            stage('Checkout') {
-                steps {
-                    git 'https://github.com/your-username/your-repo.git'
+    environment {
+        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
+        DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
+        DOCKERHUB_REPO = 'amirdirin/otp2_vk1_f2025_demo1'
+        DOCKER_IMAGE_TAG = 'latest'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/ADirin/opt2_vk1_Syys2025.git'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                // Run the tests first to generate data for Jacoco and JUnit
+                bat 'mvn clean test' // For Windows agents
+                // sh 'mvn clean test' // Uncomment if on a Linux agent
+            }
+        }
+        stage('Code Coverage') {
+            steps {
+                // Generate Jacoco report after the tests have run
+                bat 'mvn jacoco:report'
+            }
+        }
+        stage('Publish Test Results') {
+            steps {
+                // Publish JUnit test results
+                junit '**/target/surefire-reports/*.xml'
+            }
+        }
+        stage('Publish Coverage Report') {
+            steps {
+                // Publish Jacoco coverage report
+                jacoco()
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}")
                 }
             }
-            stage('Build') {
-                steps {
-                    bat 'mvn clean install'
-                }
-            }
-            stage('Test') {
-                steps {
-                    bat 'mvn test'
-                }
-            }
-            stage('Code Coverage') {
-                steps {
-                    bat 'mvn jacoco:report'
-                }
-            }
-            stage('Publish Test Results') {
-                steps {
-                    junit '**/target/surefire-reports/*.xml'
-                }
-            }
-            stage('Publish Coverage Report') {
-                steps {
-                    jacoco()
+        }
+        stage('Push Docker Image to Docker Hub') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', env.DOCKERHUB_CREDENTIALS_ID) {
+                        docker.image("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}").push()
+                    }
                 }
             }
         }
     }
+}
+
+
+
     ```
 
 3. **Save and Run**
