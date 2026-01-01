@@ -106,6 +106,9 @@ Final Course Grade =
 - **Final Grade ≥ 3.0 → Pass**
 
 ---
+## Sample evaluation file
+[Review Excel sheet](https://metropoliafi-my.sharepoint.com/:x:/g/personal/amirdi_metropolia_fi/IQC9x9UBErthRY-Qj2ikpkcvAWn0EHy6lwEON05xYzVA7C8?e=gN9ZpF)
+
 
 ## Notes
 
