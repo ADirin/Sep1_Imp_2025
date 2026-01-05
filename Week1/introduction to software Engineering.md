@@ -89,7 +89,7 @@ The **SDLC** is a specific subset of software engineering processes that focuses
 
 # Software-Engineering-Project-Management
 
-![Software project management](/Images/SPM.gif)
+![Software project management](/Images/project_man.jpg)
 
 ## Introduction
 
