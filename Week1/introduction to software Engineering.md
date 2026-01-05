@@ -22,7 +22,7 @@ Some prominent software engineering disciplines include:
 
 **Software Project Management**: Involves planning, organizing, and controlling software projects to ensure they are completed on time, within budget, and according to specifications.
 
-> ![Software Engineering](/Images/software-engineering-introduction.png)
+> ![Software Engineering](/Images/se_process.jpg)
 
 # Software-Development-Life-Cycle
 The Software Development Life Cycle (SDLC) is a framework that describes the stages involved in the development of software. 
