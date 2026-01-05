@@ -110,7 +110,7 @@ Effective project management in software engineering encompasses several key tas
 - **Progress Tracking**: Monitor progress against the schedule and adjust as necessary.
 
 
-> ![Software Engineering_Scheduling](/Images/planning.jpg)
+> ![Software Engineering_Scheduling](/Images/pm_schedule.jpg)
 
 ### Risk Management
 - **Risk Identification**: Identify potential risks that could impact the project.
