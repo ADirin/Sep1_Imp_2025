@@ -134,7 +134,7 @@ Effective project management in software engineering encompasses several key tas
 - **Documentation**: Provide comprehensive documentation for users and maintenance.
 - **Feedback**: Collect feedback post-deployment to improve future projects.
 
-  > ![Software Engineering_delivery](/Images/delivery.jpg)
+  > ![Software Engineering_delivery](/Images/pm_process.jpg)
   - **source:** http://www.pmknowledgehub.com/category/project-management-processes/
 
 ---
