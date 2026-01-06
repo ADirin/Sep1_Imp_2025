@@ -88,6 +88,26 @@ Self & Peer Review Contribution = (Peer Review Score / 10) × 1.0
 
 ---
 
+## Penalty Rules (Applied Before Grade Conversion)
+
+| Situation | Penalty Applied |
+|---------|----------------|
+| Sprint report submitted up to 24h late | −10% of sprint score |
+| Sprint report submitted 24–72h late | −30% of sprint score |
+| Sprint report submitted more than 72h late | Sprint score = 0 |
+| Missing sprint submission | Sprint score = 0 |
+| Individual contribution < 50% of sprint workload | Individual sprint score = 0 |
+| Absent from sprint review meeting (no approved reason) | Individual sprint score = 0 |
+| Final project submitted late (≤ 48h) | −20% of final project score |
+| Final project not submitted | Final project score = 0 |
+| No self & peer review submitted | Self & peer review score = 0 |
+
+### Notes
+- Sprint participation and attendance are **mandatory**.
+- Individual penalties may **override team sprint scores** where applicable.
+- Approved absences must be **documented in advance**.
+
+------------------------
 ## Final Grade Calculation
 
 Final Course Grade =
