@@ -36,16 +36,7 @@ Prepare a clear **Product Vision document** (maximum **one A4 page**) covering:
 ---
 
 ### 4. Create the Project Plan (3 Points)
-The project plan must include:
-
-- Project overview and problem summary
-- Project objectives (specific, measurable, achievable, and relevant)
-- Scope definition (included and excluded items)
-- Project timeline (e.g., Jira or Trello)
-- Resource allocation (team roles, tools, software, hardware, external support)
-- Risk management (description, likelihood, impact, mitigation strategies)
-- Testing and quality assurance approach
-- Documentation and reporting strategy
+*(see the instruction)* https://github.com/ADirin/Sep1_Imp_2025/edit/main/Week1/Home%20Assignmetn/Project_Plan.md
 
 ---
 
