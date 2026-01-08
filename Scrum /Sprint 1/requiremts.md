@@ -31,7 +31,7 @@ The objective of **Sprint 1** is to establish a project team, select a project t
 ### 3. Create a Product Vision (2 Points)
 Prepare a clear **Product Vision document** (maximum **one A4 page**) covering:
 
-*(See the sample report at.)* [Project Vision] (https://github.com/ADirin/Sep1_Imp_2025/blob/main/Week1/Home%20Assignmetn/Project_Vision.md)
+*(See the instruction.)*  https://github.com/ADirin/Sep1_Imp_2025/blob/main/Week1/Home%20Assignmetn/Project_Vision.md
 
 ---
 
