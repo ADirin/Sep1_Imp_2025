@@ -1,13 +1,13 @@
 # Home Assignment: Software Engineering *Project Plan*
 
-## You are not allowed to use AI in this course for generating documents, writing code, or performing any other tasks that may affect your competence development
+## You are notrecommended to use AI in this course for generating documents, writing code, or performing any other tasks that may affect your competence development
 
  ## Assignment Overview
-In this assignment, you are required to develop a short project plan for your software engineering project. This plan should provide a clear and concise overview of how you intend to execute the project. The final project plan must be submitted in the designated Dropbox on *Moodle* by **25th August**.
+In this assignment, you are required to develop a short project plan for your software engineering project. This plan should provide a clear and concise overview of how you intend to execute the project. The final project plan must be submitted in the designated Dropbox on *Oma* by **See the deadline in Oma**.
 
 The project plan should be a well-structured document and should not exceed 10 pages in practice. However, in your project plan report, make sure all topics are thoroughly covered, as there are *no page limitations*.
 - Use clear and concise language.
-- Include any necessary diagrams or charts to support your plan.
+- Include any necessary diagrams or charts to support your plan if yo uknow how.
 - Ensure your document is in PDF format before submission.
 
  **If you have any questions, do not hesitate to contact me during the lecture hours**
@@ -58,7 +58,7 @@ The project plan should be a well-structured document and should not exceed 10 p
 - Describe how you will report on project progress (e.g., weekly updates, meetings, reports, see the review report deadlines in the course moodle site).
 
 ### 9. Submission
-- Once your project plan is complete, submit the document in the designated Dropbox on Moodle by **31st August**.
+- Once your project plan is complete, submit the document in the designated Dropbox on Oma by **Due Date in oma**.
 
 
 ## Evaluation Criteria
