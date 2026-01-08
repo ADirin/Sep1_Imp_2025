@@ -1,69 +1,104 @@
-# Sprint 1 Tasks (19.08-02.09)  
-**Amir Dirin / F2025**  
-------------------------------------------------------------------------------
+## Sprint 1 Objective (10 Points)
 
-## ⚠️NOTE FOR STUDENTS:  
-- <span style="background-color: #ffff99;">In this course, the focus is more on the process of developing the product than on the final product itself.</span> Don’t worry about trying to build everything in a single sprint, that’s not the goal.  
-- <span style="background-color: #ffff99;">The lecturer will take the role of Product Owner.</span> At the end of each sprint, your work will be reviewed during a dedicated Zoom session for each team, and all team members are expected to participate in the review session.
-- Despite assigning points to each task, this does not mean that a team can choose some tasks and ignore others just to earn passing points. The team must implement all tasks defined in the requirements for each sprint.
+The objective of **Sprint 1** is to establish a project team, select a project topic, define the product vision and project plan, and set up project management tools along with the initial product backlog.
 
-----------------------------------------------------------
+---
 
-## 💡Sprint 1 Objective (**10 Points** )  
-<span style="background-color: #ffff99;">Establish the project team, choose a topic, define the project vision, and set up the tools along with the initial product backlog.</span>  
-## Sprint Tasks
+## Important Notes for Students
+
+- The primary focus of this course is on the **process of product development**, rather than the final product itself. Students are **not expected to build a complete system in a single sprint**.
+- The course emphasizes **Agile and Scrum practices**, as well as tools such as **CI/CD, Docker, and Kubernetes**, during project implementation.
+- The lecturer will act as the **Product Owner**. At the end of each sprint, teams will participate in a **Sprint Review session via Zoom**.  
+  **Attendance is mandatory**, and each team member must clearly present their **individual contribution**.
+
+---
+
+## Sprint 1 Tasks
 
 ### 1. Form a Project Team
-- <span style="background-color: #ffff99;">Assemble a team of up to 4 students</span> and update the group-setup form that is shared during the lecture.  
-- Decide on your communication and collaboration tools between the group members (e.g., Discord, Teams, WhatsApp).  
+- Assemble a team of up to **four (4) students** and complete the group setup form shared during the lecture.
+- Decide on communication and collaboration tools (e.g., Discord, Microsoft Teams, WhatsApp).
+
+---
 
 ### 2. Select a Project Topic
-- <span style="background-color: #ffff99;">Choose a project topic for your team</span> to implement during SEP1 and continue in SEP2.  
-- If you decide on your own topic, make sure it is realistic and achievable within the course timeline. Discuss the topic with the teacher before starting the implementation.  
+- Choose a project topic to be implemented during **SEP1** and continued in **SEP2**.
+- If proposing a custom topic, ensure it is **realistic and achievable** within the course timeline.  
+  Students are strongly encouraged to **discuss the topic with the lecturer** before implementation.
 
-### ✅3. Create a Product Vision (**3 Points**)
-- Write a clear vision statement that describes (one A4 page):  
-  - <span style="background-color: #ffff99;">Target product functionalities</span>  
-  - <span style="background-color: #ffff99;">Target users, stakeholders, role players</span>  
-  - <span style="background-color: #ffff99;">Problem it solves and value for customers</span>  
-  - <span style="background-color: #ffff99;">Design and development team</span>  
-  - <span style="background-color: #ffff99;">Timeline to deliver functional prototype</span>  
-*(See a sample report shared in Moodle site)*  
+---
 
-### 4. Discuss and Select Technologies
-<span style="background-color: #ffff99;">Note: All lecture examples, demonstrations, and compulsory assignments are in Java.</span>  
+### 3. Create a Product Vision (2 Points)
+Prepare a clear **Product Vision document** (maximum **one A4 page**) covering:
 
-- As a team, research and decide which technologies you will use, including:  
-  - Frontend ()  
-  - Backend ()  
-  - Database ()  
-  - Other tools or frameworks (e.g., authentication, APIs)  
-- Document your chosen technology stack and explain the reasoning behind your decisions in the project’s GitHub README (see Task 5).  
+- Core functionalities of the product
+- Target users, stakeholders, and role players
+- Problem statement and value proposition
+- Design and development team overview
+- Timeline for delivering a functional prototype
 
-### ✅5. Set Up a Project Management Tool (**3 Points**)
-- Choose either **Jira** or **Trello**:  
-  - <span style="background-color: #ffff99;">Create your workspace and invite all team members and the lecturer.</span>  
-  - Set up your product backlog (See Task 6) and the first sprint board.  
-- Create a **GitHub repository** for your project:  
-  - <span style="background-color: #ffff99;">Update the project topic, team name, selected technology, and methodology (Agile).</span>  
-  *(See demonstration of sample GitHub setup)*  
+*(See the sample report shared during the lecture.)*
 
-### ✅6. Create the Initial Product Backlog (**2 Points**)
-- <span style="background-color: #ffff99;">List the main features and tasks</span> needed for your project.  
-- Prioritize them based on importance and feasibility.  
-- Keep the backlog flexible so it can be refined in later sprints.  
-- Write user stories using the format:  
-  - `As a [user type], I want [functionality] so that [benefit].`  
-  - **Example:**  
-    - `As a student, I want to reset my password so that I can regain access to my account if I forget it.`  
+---
 
-### 7. ✅Design the Application UI (**2 Points**)
-- <span style="background-color: #ffff99;">Create a folder in your GitHub repository named Documents</span> and upload all your designs there.  
-- Design the application UI using **Figma** and share it during the Sprint 1 review with the teacher.  
-- Design the initial database architecture and include it in the same folder.  
+### 4. Create the Project Plan (3 Points)
+The project plan must include:
 
-----------------------------------------------------------------------
+- Project overview and problem summary
+- Project objectives (specific, measurable, achievable, and relevant)
+- Scope definition (included and excluded items)
+- Project timeline (e.g., Jira or Trello)
+- Resource allocation (team roles, tools, software, hardware, external support)
+- Risk management (description, likelihood, impact, mitigation strategies)
+- Testing and quality assurance approach
+- Documentation and reporting strategy
 
-### 📝Review Meeting
-- <span style="background-color: #ffff99;">Scheduled for two weeks after the first lecture (19.08.2025).</span>  
-- All team members must participate.
+---
+
+### 5. Technology Selection
+- Discuss and select the technologies to be used in the project.
+
+> **Note:** All lecture examples and compulsory assignments are based on **Java**.  
+> If alternative technologies are used, the lecturer cannot guarantee technical support.
+
+- The selected technology stack must **fully meet the course requirements**.  
+  Statements such as *“our chosen technology does not support feature X”* will **not be accepted** and may negatively affect your grade.
+- Document the chosen technology stack and the rationale behind your decisions in the **project GitHub README**.
+- The technology stack must include:
+  - Frontend
+  - Backend
+  - Database
+  - Additional tools or frameworks (e.g., authentication, APIs)
+
+---
+
+### 6. Set Up Project Management Tools (1 Point)
+- Select either **Jira** or **Trello**.
+- Create a workspace and invite **all team members and the lecturer**.
+- Set up the **product backlog** and the **first sprint board**.
+- Create a GitHub repository and add a folder named **`Documents`** for future design artifacts.
+
+---
+
+### 7. Create the Initial Product Backlog (1 Point)
+- Identify key features and tasks.
+- Prioritize items based on importance and feasibility.
+- Write user stories using the following format:
+
+```text
+As a [user type], I want [functionality] so that [benefit].
+````
+
+### 8. Prepare Topic Presentation (3 Points)
+- Prepare a 25-minute presentation based on the shared classroom presentation topics.
+- The presentation schedule will be announced one week in advance.
+- At the end of the presentation, prepare two discussion questions for classmates to answer.
+
+### Optional Early Implementation
+If time permits:
+1. Design the application UI using Figma and present it during the Sprint 1 review.
+2. Design the initial database architecture and include it in the Documents folder.
+
+### Sprint Review Meeting
+The Sprint 1 _Review Meeting_ is scheduled two weeks after the first lecture (Week 3, 2026).
+Attendance by all team members is mandatory.
