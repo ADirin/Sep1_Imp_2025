@@ -55,7 +55,7 @@ The project plan should be a well-structured document and should not exceed 10 p
 
 ### 8. Documentation and Reporting
 - Specify the documentation you plan to produce throughout the project (e.g., user manuals, technical documentation).
-- Describe how you will report on project progress (e.g., weekly updates, meetings, reports, see the review report deadlines in the course moodle site).
+- Describe how you will report on project progress (e.g., weekly updates, meetings, reports, see the review report deadlines in the course OMA site).
 
 ### 9. Submission
 - Once your project plan is complete, submit the document in the designated Dropbox on Oma by **Due Date in oma**.
