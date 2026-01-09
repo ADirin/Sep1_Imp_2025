@@ -10,7 +10,7 @@
   - **What Went Well**
   - **What Could Be Improved**
   - **Next Sprint Focus**
-  - ** A table to demonstrate the time spent by each memeber during the spring**
+  - **A table to demonstrate the time spent by each memeber during the spring**
 
 ### 2. Name the file
 - Example: `Sprint_1_Review_Report.md` or `Sprint_1_Review_Report.pdf`
