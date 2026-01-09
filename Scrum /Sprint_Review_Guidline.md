@@ -87,3 +87,6 @@ The Sprint Review is an opportunity for teams to demonstrate their progress, gat
 
 By following these guidelines, teams will be well-prepared for their sprint reviews, ensuring that they can effectively demonstrate their progress, gather valuable feedback, and plan for future work.
 
+
+
+
