@@ -33,3 +33,79 @@ graph TD
 
 
 ```
+
+## The Sprints delivery
+
+``` Mermaid
+%% Academic Jira-style Course Board (Updated Sprint Review Weeks)
+flowchart LR
+    %% Columns
+    subgraph Backlog["Backlog"]
+        B1[Week 1: Software Engineering Basics]
+        B2[Week 2: DevOps Fundamentals]
+        B3[Week 3: Dependency Management & Unit Testing]
+        B4[Week 4: Coverage Code]
+        B5[Week 5: CI with Jenkins]
+        B6[Week 6: Docker & Containerization]
+        B7[Week 7: SecDevOps]
+        B8[Week 8: Final Project Presentation]
+    end
+
+    subgraph ToDo["To Do"]
+        T1[Prepare GitHub repository & Trello board]
+        T2[Plan Sprint 1 tasks]
+        T3[Plan Sprint 2 tasks]
+        T4[Plan Sprint 3 tasks]
+        T5[Plan Sprint 4 tasks]
+    end
+
+    subgraph InProgress["In Progress"]
+        IP1[Complete Week 1 assignment]
+        IP2[Complete Week 2 assignment]
+        IP3[Unit Testing and Coverage Code Implementation]
+        IP4[CI Pipeline Setup]
+        IP5[Docker Project Setup]
+        IP6[Docker image & GitHub & Presentation]
+    end
+
+    subgraph Done["Done"]
+        D1[Sprint 1 Review submitted Week 3]
+        D2[Sprint 2 Review submitted Week 5]
+        D3[Sprint 3 Review submitted Week 7]
+        D4[Sprint 4 Final Project submitted]
+    end
+
+    %% Flow between columns
+    B1 --> T1
+    B1 --> T2
+ 
+    B3 --> T3
+    B4 --> T3
+    B5 --> T4
+    B6 --> T4
+    B7 --> T5
+    B8 --> T5
+
+    T1 --> IP1
+    T2 --> IP1
+    T2 --> IP2
+    T3 --> IP3
+    T3 --> IP4
+    T4 --> IP5
+    IP6 --> D4
+    T5 --> IP6
+
+
+    IP1 --> D1
+  
+    IP3 --> D2
+  
+    IP5 --> D3
+    
+
+
+
+
+
+
+```
