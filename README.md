@@ -1,4 +1,4 @@
-# Summary of the course
+# Summary of the course ‼️
 
 This course introduces students to foundational software engineering principles within a DevOps-oriented development workflow. Throughout the course, students apply Scrum practices, working in teams with defined roles and iterative development cycles. Each sprint includes sprint planning, in-class development assignments, and sprint review activities, enabling students to translate theory into practice.
 
@@ -34,7 +34,7 @@ graph TD
 
 ```
 
-## The Sprints delivery
+## The Sprints delivery ❤️
 ```mermaid
 %% Academic Jira-style Course Board (Updated Sprint Review Weeks)
 flowchart LR
