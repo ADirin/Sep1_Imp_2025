@@ -20,12 +20,12 @@ graph TD
 
     click A1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week1"
     click B1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week2%20"
-    click C1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%203"
-    click D1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%204"
-    click E1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%205"
-    click F1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%206"
-    click G1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%207"
-    click H1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%208"
+    click C1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week4"
+    click D1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week3"
+    click E1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week5"
+    click F1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week6"
+    click G1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week7"
+    click H1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week8"
 
 
 ```
