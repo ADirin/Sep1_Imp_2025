@@ -19,7 +19,7 @@ graph TD
     H1[Final Project Presentation and Learning Consolidation] --> H
 
     click A1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week1"
-    click B1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%202"
+    click B1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week2%20"
     click C1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%203"
     click D1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%204"
     click E1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%205"
