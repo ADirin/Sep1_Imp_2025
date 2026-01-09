@@ -17,7 +17,7 @@
 
 ### 3. Upload to GitHub
 - Open your **project repository** on GitHub.
-- Navigate to the appropriate folder (e.g. `/docs/review report` ).
+- Navigate to the appropriate folder (e.g. `/docs/sprint_report/` ).
 - Click **Add file → Upload files**.
 - Upload the report and **commit** with a clear message  
   (e.g. *“Add Sprint 1 review report”*).
