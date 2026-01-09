@@ -18,7 +18,7 @@ graph TD
     G1[Security Integration in DevOps] --> G
     H1[Final Project Presentation and Learning Consolidation] --> H
 
-    click A1 href "[https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%201](https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week1)"
+    click A1 href "https://github.com/ADirin/Sep1_Imp_2025/tree/main/Week1"
     click B1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%202"
     click C1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%203"
     click D1 href "https://github.com/ADirin/OTP1_LectureMaterial/tree/main/Week%204"
