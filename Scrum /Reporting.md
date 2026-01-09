@@ -1,61 +1,26 @@
-### Sprint Review Meeting Preparation Instructions
+## Sprint Review Report – Short Guideline
 
-## Importance of Sprint Planning
+### 1. Create the report
+- Use a simple format (Markdown or PDF).
+- Keep it short: **1–2 pages max**.
+- Include the following sections:
+  - **Sprint Goal**
+  - **Completed User Stories / Tasks**
+  - **Demo Summary** (what was shown in the review)
+  - **What Went Well**
+  - **What Could Be Improved**
+  - **Next Sprint Focus**
 
-Sprint planning is essential for setting clear objectives and expectations for each sprint. During this meeting, groups should:
-   - Define the goals for the upcoming sprint.
-   - Identify tasks and assign responsibilities among team members.
-   - Estimate the time required for each task to ensure feasibility within the sprint duration.
+### 2. Name the file
+- Example: `Sprint_1_Review_Report.md` or `Sprint_1_Review_Report.pdf`
 
-![Sprint planning](/Images/SP6.JPG)
+### 3. Upload to GitHub
+- Open your **project repository** on GitHub.
+- Navigate to the appropriate folder (e.g. `/docs` or `/reports`).
+- Click **Add file → Upload files**.
+- Upload the report and **commit** with a clear message  
+  (e.g. *“Add Sprint 1 review report”*).
 
-## Importance of Sprint Review
-
-Sprint reviews allow teams to showcase their work and gather feedback. This meeting should:
-  - Present completed tasks and deliverables.
-  - Discuss what went well and what challenges were faced.
-  - Gather input from peers and instructors for continuous improvem
-
-![Sprint planning](/Images/SP7.JPG)
-
-## Tracking System
-
-We use Trello in this course for project management where all groupd can log their sprint planning and review form. Hence the sprint success measuring is done by: 
-   - teacher monitoring,
-   - group transparency,
-   - and visual timelines
-
-![Sprint planning](/Images/SP8.JPG)
-
-
-
-**Dear Team,**
-
-To ensure a productive Sprint Review meeting, please follow these preparation steps:
-
-1. **Trello Board Status:**
-   - Review the overall status of the Trello board.
-   - Ensure that all tasks are correctly categorized (To Do, In Progress, Done, etc.).
-   - Update any incomplete or missing information.
-
-2. **Time Spent by Each Team Member:**
-   - Provide an update on the time spent by each team member on their respective tasks.
-   - Ensure that all time logs are accurate and up to date.
-
-3. **Sprint X Backlog Status:**
-   - Review the Sprint X backlog and prepare to report on the following:
-     - **Completed User Stories:** Number of stories fully completed.
-     - **In-Progress User Stories:** Number of stories still in progress.
-     - **Postponed User Stories:** Number of stories that have been postponed or moved to the next sprint.
-
-4. **Obstacles Encountered:**
-   - Identify and document any obstacles or challenges the team faced during the sprint.
-   - Be prepared to discuss how these obstacles were managed or if they remain unresolved.
-5. **Submission**
-  - Please submit as a pdf in designated folder in Moodle / Oma
-
-Please have all updates and data ready before the meeting to ensure an efficient review. If you have any questions, reach out to the Scrum Master.
-
-**Best,  
-[Your Team No.]  
-Scrum Master**
+### 4. Verify
+- Make sure the file is visible in the repository.
+- Confirm all team members have access.
