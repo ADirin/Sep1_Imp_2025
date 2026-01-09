@@ -35,8 +35,7 @@ graph TD
 ```
 
 ## The Sprints delivery
-
-``` Mermaid
+```mermaid
 %% Academic Jira-style Course Board (Updated Sprint Review Weeks)
 flowchart LR
     %% Columns
@@ -102,10 +101,5 @@ flowchart LR
   
     IP5 --> D3
     
-
-
-
-
-
 
 ```
