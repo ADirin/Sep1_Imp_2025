@@ -11,7 +11,7 @@ The project plan should be a well-structured document and should not exceed 10 p
 - Ensure your document is in PDF format before submission.
 
  **If you have any questions, do not hesitate to contact me during the lecture hours**
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 ## Assignment Requirements
 
