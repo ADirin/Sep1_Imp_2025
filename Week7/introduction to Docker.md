@@ -1,3 +1,5 @@
+https://labs.iximiuz.com/playgrounds/docker/696a2367bfdabbdd890dc74a
+
 # Before Docker: 
 The relationship between developers and testers was often strained due to environment inconsistencies. Developers would say, "It works on my machine," while testers struggled with bugs caused by differences in local setups. Setting up environments manually was time-consuming and prone to errors, leading to frustration on both sides.
 ![development before Docker](/Images/Picture2.jpg)
