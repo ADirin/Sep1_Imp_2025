@@ -189,71 +189,73 @@ sequenceDiagram
    - Write the following script:
 
     ```groovy
-   pipeline {
+  pipeline {
     agent any
-    tools{
-    maven 'Maven3'
+
+    tools {
+        maven 'Maven3'
     }
+
     environment {
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'amirdirin/otp2_vk1_f2025_demo1'
+        DOCKERHUB_REPO = 'amirdirin/demo1_2026'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
     stages {
+
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/opt2_vk1_Syys2025.git'
+                git 'https://github.com/ADirin/lectDemo_1_f2026.git'
             }
         }
+
         stage('Run Tests') {
             steps {
-                // Run the tests first to generate data for Jacoco and JUnit
-                bat 'mvn clean test' // For Windows agents
-                // sh 'mvn clean test' // Uncomment if on a Linux agent
+                bat 'mvn clean test'
             }
         }
+
         stage('Code Coverage') {
             steps {
-                // Generate Jacoco report after the tests have run
                 bat 'mvn jacoco:report'
             }
         }
+
         stage('Publish Test Results') {
             steps {
-                // Publish JUnit test results
                 junit '**/target/surefire-reports/*.xml'
             }
         }
+
         stage('Publish Coverage Report') {
             steps {
-                // Publish Jacoco coverage report
                 jacoco()
             }
         }
+
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}")
+                    docker.build("${DOCKERHUB_REPO}:${DOCKER_IMAGE_TAG}")
                 }
             }
         }
+
         stage('Push Docker Image to Docker Hub') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', env.DOCKERHUB_CREDENTIALS_ID) {
-                        docker.image("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}").push()
+                    docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS_ID) {
+                        docker.image("${DOCKERHUB_REPO}:${DOCKER_IMAGE_TAG}").push()
                     }
                 }
             }
         }
+
     }
-}
-
-
-
-    ```
+ }
+````
 
 3. **Save and Run**
    - Save the job and click "Build Now" to run the pipeline.
