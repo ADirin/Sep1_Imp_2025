@@ -165,5 +165,5 @@ Docker ensures consistent environments across development, testing, and producti
 | MariaDB   | Database backend |
 
 ---
-
-[lecture Demo](https://github.com/ADirin/lectDemo_1_f2026.git) 
+See the
+![lecture Demo](https://github.com/ADirin/lectDemo_1_f2026.git) 
