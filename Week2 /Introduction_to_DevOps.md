@@ -1,5 +1,6 @@
 # Product Development Process: Example of a Fitness App
 
+The following Figure depict how a business idea moves from planning and requirments (business) into building the solution (development), then into running and maintaining it (operations), and finally into real-world usage (use).
 
  ![product stages](../Images/productStage.jpg)
 
@@ -35,6 +36,9 @@
   - **Feedback:** Users provide feedback through in-app surveys, reviews, and customer support interactions.
   - **Iterative Improvement:** Based on user feedback, the development team plans future updates, such as new workout programs or improved integration with wearable devices.
 
+
+
+DevOps relates to this cycle by connecting business, development, operations, and use into one continuous, automated loop. It breaks down silos so that development and operations work together, enabling faster delivery, more reliable deployments, and quicker feedback from users. Through automation, monitoring, and continuous integration and delivery (CI/CD), DevOps ensures that insights from real usage flow back into development and business decisions.
 
 ----------------------------------------------------------
 
