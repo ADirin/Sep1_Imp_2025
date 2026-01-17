@@ -166,4 +166,5 @@ Docker ensures consistent environments across development, testing, and producti
 
 ---
 
-See the [lecture Demo] https://github.com/ADirin/lectDemo_1_f2026.git 
+See the 
+! [lecture Demo] (https://github.com/ADirin/lectDemo_1_f2026.git) 
