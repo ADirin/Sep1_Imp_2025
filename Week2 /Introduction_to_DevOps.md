@@ -87,3 +87,83 @@ DevOps emerged as a response to the challenges faced by traditional software dev
 ---
 
 
+# DevOps Implementation Example
+## Java Application with Jenkins, Docker, GitHub, and MariaDB
+
+---
+
+## 1. Code & Version Control (GitHub)
+- The Java application (e.g. Spring Boot) source code is stored in **GitHub**.
+- The repository typically includes:
+  - Java source code
+  - Unit tests
+  - `Dockerfile` for the Java application
+  - `docker-compose.yml` (Java app + MariaDB)
+  - `Jenkinsfile` defining the CI/CD pipeline
+
+Developers push changes to GitHub, which triggers the DevOps pipeline.
+
+---
+
+## 2. Continuous Integration (Jenkins)
+- **Jenkins** monitors the GitHub repository.
+- On every commit or pull request:
+  1. Jenkins checks out the latest code.
+  2. Builds the Java application using **Maven**.
+  3. Runs unit tests.
+  4. Fails the build if tests fail.
+  5. Generates test and coverage reports.
+
+This ensures code quality before deployment.
+
+---
+
+## 3. Containerization (Docker)
+- If the build succeeds, Jenkins:
+  - Builds a **Docker image** for the Java application.
+  - Packages the compiled JAR with the required runtime.
+- **MariaDB** runs in a separate Docker container using the official image.
+- Environment variables are used for database configuration.
+
+Docker ensures consistent environments across development, testing, and production.
+
+---
+
+## 4. Image Registry (Docker Hub)
+- Jenkins tags the Docker image (e.g. `myapp:1.0.0`).
+- The image is pushed to **Docker Hub**.
+- The image is now ready for deployment on any server.
+
+---
+
+## 5. Deployment (Docker / Docker Compose)
+- On the deployment server:
+  - Docker or Docker Compose pulls the latest image from Docker Hub.
+  - The Java application container starts.
+  - The application connects to the MariaDB container.
+- Volumes persist MariaDB data.
+- Docker networks enable secure container communication.
+
+---
+
+## 6. Continuous Delivery & Feedback
+- Application logs and metrics are monitored.
+- Errors and performance issues are detected early.
+- User feedback and monitoring data are fed back to development.
+- The cycle repeats automatically with each new code change.
+
+---
+
+## 7. Tool Responsibilities Summary
+
+| Tool       | Responsibility |
+|------------|----------------|
+| GitHub     | Source code version control |
+| Jenkins    | CI/CD automation |
+| Docker     | Containerization |
+| Docker Hub | Image storage and distribution |
+| MariaDB   | Database backend |
+
+---
+
+See the [lecture Demo] https://github.com/ADirin/lectDemo_1_f2026.git 
