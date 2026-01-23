@@ -73,7 +73,7 @@ Open IntelliJ IDEA and select "Create New Project" from the welcome screen.
 
 ## Submission Instructions
 1. Take a screenshot of the output showing the results of your tests.
-3. Submit the screenshot to the designated folder in Moodle as per classroom instructions.
+3. Submit the screenshot to the designated folder in Oma as per classroom instructions.
 4. Attach also the github repo of the solution
 
 ---
