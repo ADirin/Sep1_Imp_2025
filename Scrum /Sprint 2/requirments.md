@@ -1,5 +1,5 @@
 # Sprint 2 Tasks  
-**AD/ 2025**
+**AD/ 2026**
 
 ----------------------------------------------------------------
 ## ⚠️  NOTE FOR STUDENTS:  
@@ -7,13 +7,15 @@
 - <span style="background-color: #ffff99;">The lecturer will take the role of Product Owner.</span> At the end of each sprint, your work will be reviewed during a dedicated Zoom session for each team, and all team members are expected to participate in the review session.
 - Despite assigning points to each task, this does not mean that a team can choose some tasks and ignore others just to earn passing points. The team must implement all tasks defined in the requirements for each sprint.
 - Lectures help you implement the tasks smoothly, so it is highly recommended to attend them and complete the in-class assignments.
+- Use the project repository to maintain sprint reports, latest commits, and design artifacts.
 -----------------------------------------------------------------------------------
 
 ## 💡Objective of the sprint2
  
 The primary objective of this sprint is to lay the foundation for the application by:  
 - Implementing the database  
-- Initiating the user interface development  
+- Initiating the user interface development
+- Extend the database and software architectural design as your data modeling course progresses. 
 - Integrating essential development tools such as **unit testing**, **Maven dependencies**, and **code coverage reporting**  
 
 ---------------------------------------------------------------
