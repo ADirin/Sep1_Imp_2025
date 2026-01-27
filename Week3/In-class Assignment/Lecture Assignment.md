@@ -27,8 +27,7 @@ Open IntelliJ IDEA and select "Create New Project" from the welcome screen.
    - **`celsiusToFahrenheit`**:
      - This method should convert a temperature from Celsius to Fahrenheit using the formula:
        \[
-       Fahrenheit = (Celsius \times \frac{9}{5}) + 32
-       \]
+       Fahrenheit = (Celsius * 9 / 5 + 32 ]
      - The method should accept a `double` parameter (temperature in Celsius) and return a `double` value (temperature in Fahrenheit).
 
    - **`isExtremeTemperature`**:
