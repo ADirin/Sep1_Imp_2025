@@ -12,7 +12,7 @@
   - **Definition of Done**
 
 ### 2. Name the file
-- Example: `Sprint_1_Planning_Report.md` or `Sprint_1_Planning_Report.pdf`
+- Example: `Sprint_x_Planning_Report.md` or `Sprint_x_Planning_Report.pdf`
 
 ### 3. Upload to GitHub
 - Open your **project repository** on GitHub.
