@@ -1,9 +1,7 @@
-# Unit 5- Testing
+# Unit Testing and Coverage Code
 
 ## Objective:
-The objective of this assignment is to familiarize yourself with Eclipse's JUnit 5 testing environment and determine test coverage.
-## "NOTE":
-- You can implement this assignment in IntelliJ even though the assignment description mentions Eclipse.
+The objective of this assignment is to familiarize yourself with  JUnit 5 testing environment and determine test coverage.
 
 ## Steps:
 1. **Create Maven Project:**
