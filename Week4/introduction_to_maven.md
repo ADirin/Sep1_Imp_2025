@@ -201,5 +201,5 @@ Maven has a default build lifecycle consisting of several phases. Each phase rep
 - deploy: Deploy the package to a remote repository.
 --------------------------------------------------------------
 ### 📌Lecture Demo (SpeedCalculator)
-- [Source Code](https://github.com/ADirin/week4_inclass_speedcalculator)
+- [Source Code](https://github.com/ADirin/30x_test.git)
   
