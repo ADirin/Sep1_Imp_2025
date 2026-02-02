@@ -174,7 +174,7 @@ Additional pluging to create a juit test report as XML.
 
 **Finally the main class definsion plugin
 ```
-<plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.4.2</version>
@@ -186,8 +186,6 @@ Additional pluging to create a juit test report as XML.
                     </archive>
                 </configuration>
             </plugin>
-
-
 ```
 
 4. Build Lifecycle
