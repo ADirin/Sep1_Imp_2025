@@ -41,9 +41,9 @@ Create a JaCoCo code coverage report for the entire project to ensure your tests
     - Click New Item.
     - Select Freestyle project and give it a name (e.g., Amir_Tempreture_V1).
     - Under Source Code Management, select Git.
-          - Add the GitHub repository URL.
+           - Add the GitHub repository URL.
     - Under Build Steps:
-           -   _Select Invoke top-level Maven targets._
+            -   _Select Invoke top-level Maven targets._
       - Under Post-Build Actions:
             -  _Select Publish coverage report._
 **Note** If the coverage report does not work, I will demonstrate an alternative workaround
