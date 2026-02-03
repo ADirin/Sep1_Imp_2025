@@ -93,6 +93,14 @@ Adding Dependencies:
         <version>5.8</version>
         <scope>test</scope>
     </dependency>
+
+   <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.13</version>
+   </dependency>
+
+
 </dependencies>
 ```
 - groupId: The group ID of the dependency.
@@ -128,6 +136,8 @@ Configuring Plugins:
 ## Example of Plugin (JACOCO)
 
 ```xml
+
+
  <build>
         <plugins>
             <!-- JaCoCo plugin for code coverage -->
