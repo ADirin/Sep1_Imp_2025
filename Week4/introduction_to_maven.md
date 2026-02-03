@@ -87,12 +87,13 @@ Adding Dependencies:
 
 ```xml
 <dependencies>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>5.8</version>
-        <scope>test</scope>
-    </dependency>
+  <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+
+  </dependency>
 
    <dependency>
             <groupId>org.jacoco</groupId>
