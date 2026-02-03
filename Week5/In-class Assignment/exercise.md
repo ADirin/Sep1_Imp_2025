@@ -35,6 +35,20 @@ Create a JaCoCo code coverage report for the entire project to ensure your tests
 
     - After a successful test run, configure the post-build action to publish the JaCoCo coverage report.
 
+4. Create a public GitHub Repo and commit the final version to the newelly created Repository
+
+5.  Create a local Jenkins project
+    - Click New Item.
+    - Select Freestyle project and give it a name (e.g., Amir_Tempreture_V1).
+    - Under Source Code Management, select Git.
+          - Add the GitHub repository URL.
+    - Under Build Steps:
+           -   _Select Invoke top-level Maven targets._
+      - Under Post-Build Actions:
+            -  _Select Publish coverage report._
+**Note** If the coverage report does not work, I will demonstrate an alternative workaround
+
+
 ## Submission
 1. Screenshot: Take a screenshot of the successful test report in Jenkins. Ensure your name is visible in the screenshot (e.g., in the Jenkins job name, browser tab, or via a watermark).
 
