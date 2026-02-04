@@ -52,7 +52,7 @@ Create a JaCoCo code coverage report for the entire project to ensure your tests
 ## Submission
 1. Screenshot: Take a screenshot of the successful test report in Jenkins. Ensure your name is visible in the screenshot (e.g., in the Jenkins job name, browser tab, or via a watermark).
 
-2. Upload: Submit the following two items to the designated Moodle folder:
+2. Upload: Submit the following two items to the designated Oma folder:
 
     - The screenshot of the Jenkins test report.
 
