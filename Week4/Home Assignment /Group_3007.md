@@ -14,11 +14,11 @@ The objective of this assignment is to familiarize yourself with  JUnit 5 testin
 
 1. **Fix Errors and Enhance Testing:**
    - Correct the intentional errors in the existing tests.
-   - Complete missing including  `product()` and `squareroot()`.
+   - Complete missing including  `multiply()` and `squareroot()`.
    - Ensure comprehensive test coverage and add additional test methods where necessary.
 
 2. **Parameterized Test:**
-   - Refactor the `ExtraTest` class to use parameterized arrays for testing.
+   - Correct the `ExtraTest` class to use parameterized arrays for testing.
 
 3. **Handle Floating-Point Numbers:**
    - Modify the calculator to handle double-precision floating-point numbers.
