@@ -29,25 +29,21 @@ Additionally, we began creating a local Docker image for the project.
 ---------------------------------------------------------------------------------------------------------
 ## Tasks
 
-### 1. Extend Functional Prototype (3 points)
-During this sprint, we concentrate on implementing the remaining and more complex features outlined in our original product backlog. This involved:
+### 1. ✅ Extend Functional Prototype (4 points)
+During this sprint, we concentrate on implementing the remaining and more complex features outlined in our original product backlog. This involved for example:
 
 - **Feature Implementation:** We successfully implemented the following key features:
-  - User authentication and authorization module.
-  - Data validation and sanitization to prevent security vulnerabilities.
-  - Enhanced search functionality with filtering and sorting options.
-    
+  -  Implementation of the graphical user interface (e.g., JavaFX) with database interaction.
+  -  User authentication and authorization module (if essential).
+  -  Other features as defined in the initial product vision and product backlog.
 
 - **Core Functionality Validation:** We rigorously tested all core functionalities to ensure they are operational and meet the specified requirements. This included:
-  - End-to-end testing of user workflows.
   - Performance testing to identify and address bottlenecks.
-  - Security testing to identify and mitigate potential vulnerabilities.
+  - details Unit test for all funtions.
 
 - **Bug Fixing and Optimization:** We addressed logic bugs identified during testing and optimized backend performance to improve responsiveness and scalability. This involved:
   - Profiling the application to identify performance bottlenecks.
-  - Optimizing database queries and data structures.
-  - Implementing caching mechanisms to reduce database load.
-
+  
 ### 2. Integrate Jenkins for CI/CD (5 Points)
 We established a CI/CD pipeline using Jenkins to automate the build, test, and deployment processes. The following steps were taken:
 
@@ -57,7 +53,6 @@ We established a CI/CD pipeline using Jenkins to automate the build, test, and d
   - **Unit Tests:** The pipeline executes the unit tests using JUnit.
   - **Code Coverage:** The pipeline generates code coverage reports using JaCoCo.
 
-- **Notifications:** Configured email notifications to alert the team to build success or failure (optional).
 
 ### 3. Automated Unit & Coverage Testing
 We expanded our unit test suite to cover new and existing features, ensuring comprehensive test coverage.
@@ -72,9 +67,8 @@ We ensured that the application is ready for a functional review, with all main 
 - **End-to-End Functionality:** The application functions end-to-end, allowing users to complete all core workflows.
 - **Feature Completeness:** All main features are implemented and can be demonstrated.
 - **Backend and Frontend Integration:** The backend and frontend are fully integrated and functional.
-- **Documentation:** Updated documentation to reflect the new features and functionalities.
 
-### 5. Develop and test the Docker image in the local machine (2 points)
+### 5. Develop and test the Docker image in the local machine (1 points)
 - Create and test the initial docker image of the project using Docker desktop
 
 ### 6. Prepare for Sprint Review
@@ -89,5 +83,3 @@ We prepared for the sprint review by gathering evidence of completed tasks and p
 - **Trello/Jira Updates:** Updated Trello/Jira boards to reflect the progress made during the sprint, including task completion status and remaining tasks.
 
 ---
-
-**Summary:** This sprint has significantly advanced the project by establishing a robust CI/CD pipeline, extending the functional prototype with critical features, and enhancing automated testing with code coverage. We are now well-positioned to focus on polishing the UI and finalizing functionality extensions in Sprint 4.
