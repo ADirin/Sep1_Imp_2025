@@ -22,7 +22,9 @@ The primary goal of this sprint is to solidify the backend logic, add critical f
 Additionally, we began creating a local Docker image for the project.
 
 -----------------------------------------------------------------------------------------------------------
-**Sprint 3 Scrum Master tasks:**
+**Sprint 3 <img width="500" height="282" alt="image" src="https://github.com/user-attachments/assets/756c6c1f-462b-4c76-8979-35400bee20af" />
+
+ Scrum Master tasks:**
 - The **Scrum Master** will oversee team participation, AI application use, backlog updates, Sprint 2 **review preparation**, and Sprint 3 **planning submission**.
 - While teams are free to determine their own approach for Sprint 3, the following examples are provided for guidance. The prioritization and sequencing of tasks will be established by the Scrum Master in collaboration with the development team.  
 
