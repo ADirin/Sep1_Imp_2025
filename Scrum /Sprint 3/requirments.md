@@ -1,24 +1,42 @@
 # Sprint 3: CI/CD Integration, Feature Extension, and Basic Docker Image
 
-**Date:** AD/2025
 
-## Objective
-This document outlines the objectives and tasks completed during Sprint 3, focusing on extending the functional prototype, integrating Jenkins for CI/CD, enhancing automated testing with code coverage, and preparing for a functional review. The primary goal was to solidify the backend logic, add critical features, and establish a robust CI/CD pipeline to ensure continuous integration and delivery. We start to create a local docker image for our project.
+**AD/ 2026**
 
+----------------------------------------------------------------
+## ⚠️  NOTE FOR STUDENTS:  
+- <span style="background-color: #ffff99;">In this course, the focus is more on the process of developing the product than on the final product itself.</span> Don’t worry about trying to build everything in a single sprint, that’s not the goal.  
+- <span style="background-color: #ffff99;">The lecturer will take the role of Product Owner.</span> At the end of each sprint, your work will be reviewed during a dedicated Zoom session for each team, and all team members are expected to participate in the review session.
+- Despite assigning points to each task, this does not mean that a team can choose some tasks and ignore others just to earn passing points. The team must implement all tasks defined in the requirements for each sprint.
+- Lectures help you implement the tasks smoothly, so it is highly recommended to attend them and complete the in-class assignments.
+- Use the project repository to maintain sprint reports, latest commits, and design artifacts.
+-----------------------------------------------------------------------------------
+
+##  💡Sprint 3 Objectives
+This document outlines the objectives and tasks completed during Sprint 3, including:
+1. Extending the functional prototype and integrating Jenkins for CI/CD,
+2. Enhancing automated testing with code coverage and preparing for a functional review.
+
+The primary goal of this sprint is to solidify the backend logic, add critical features, and establish a robust CI/CD pipeline to ensure continuous integration and delivery.
+
+Additionally, we began creating a local Docker image for the project.
+
+-----------------------------------------------------------------------------------------------------------
 **Sprint 3 Scrum Master tasks:**
+- The **Scrum Master** will oversee team participation, AI application use, backlog updates, Sprint 2 **review preparation**, and Sprint 3 **planning submission**.
+- While teams are free to determine their own approach for Sprint 3, the following examples are provided for guidance. The prioritization and sequencing of tasks will be established by the Scrum Master in collaboration with the development team.  
 
----
-
+---------------------------------------------------------------------------------------------------------
 ## Tasks
 
 ### 1. Extend Functional Prototype (3 points)
-During this sprint, we concentrated on implementing the remaining and more complex features outlined in our original product backlog. This involved:
+During this sprint, we concentrate on implementing the remaining and more complex features outlined in our original product backlog. This involved:
 
 - **Feature Implementation:** We successfully implemented the following key features:
   - User authentication and authorization module.
   - Data validation and sanitization to prevent security vulnerabilities.
   - Enhanced search functionality with filtering and sorting options.
-  - Reporting and analytics dashboard for administrators.
+    
 
 - **Core Functionality Validation:** We rigorously tested all core functionalities to ensure they are operational and meet the specified requirements. This included:
   - End-to-end testing of user workflows.
