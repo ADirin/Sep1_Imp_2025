@@ -44,7 +44,7 @@ During this sprint, we concentrate on implementing the remaining and more comple
 - **Bug Fixing and Optimization:** We addressed logic bugs identified during testing and optimized backend performance to improve responsiveness and scalability. This involved:
   - Profiling the application to identify performance bottlenecks.
   
-### 2. Integrate Jenkins for CI/CD (5 Points)
+### 2. ✅ Integrate Jenkins for CI/CD (5 Points)
 We established a CI/CD pipeline using Jenkins to automate the build, test, and deployment processes. The following steps were taken:
 
 - **Pipeline Configuration:** We configured a Jenkins pipeline to automatically build and test the project upon code committed to the main branch. The pipeline includes the following stages:
@@ -54,24 +54,24 @@ We established a CI/CD pipeline using Jenkins to automate the build, test, and d
   - **Code Coverage:** The pipeline generates code coverage reports using JaCoCo.
 
 
-### 3. Automated Unit & Coverage Testing
+### 3. ✅ Automated Unit & Coverage Testing
 We expanded our unit test suite to cover new and existing features, ensuring comprehensive test coverage.
 
 - **Test Suite Extension:** We wrote unit tests for the newly implemented features, focusing on edge cases and boundary conditions.
 - **JaCoCo Integration:** We continued using JaCoCo for code coverage analysis, ensuring that the Jenkins pipeline generates and publishes the JaCoCo HTML report.
 - **Report Publication:** The Jenkins pipeline automatically publishes the JaCoCo HTML report to a designated location, making it accessible to the team. (Optional)
 
-### 4. Functional Review Readiness
+### 4. ✅ Functional Review Readiness
 We ensured that the application is ready for a functional review, with all main features implemented and testable.
 
 - **End-to-End Functionality:** The application functions end-to-end, allowing users to complete all core workflows.
 - **Feature Completeness:** All main features are implemented and can be demonstrated.
 - **Backend and Frontend Integration:** The backend and frontend are fully integrated and functional.
 
-### 5. Develop and test the Docker image in the local machine (1 points)
+### 5. ✅ Develop and test the Docker image in the local machine (1 points)
 - Create and test the initial docker image of the project using Docker desktop
 
-### 6. Prepare for Sprint Review
+### 6. ✅ Prepare for Sprint Review
 We prepared for the sprint review by gathering evidence of completed tasks and preparing a demonstration of the working prototype.
 
 - **Demonstration Preparation:** We prepared a demonstration of the fully working prototype, highlighting the extended features and the Jenkins CI/CD pipeline.
