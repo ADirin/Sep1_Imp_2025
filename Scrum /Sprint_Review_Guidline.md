@@ -1,5 +1,6 @@
 # Sprint Review Guidelines for Teams
 
+
 ## Objective
 The Sprint Review is an opportunity for teams to demonstrate their progress, gather feedback, and plan for the next sprint. It ensures transparency, assesses the project's trajectory, and maintains alignment with the project's goals.
 
@@ -55,6 +56,111 @@ The Sprint Review is an opportunity for teams to demonstrate their progress, gat
 8. **Summarize Key Achievements:**
    - Prepare a brief summary of the key achievements of the sprint.
    - Highlight how these achievements contribute to the overall project goals.
+
+-------------------------------------------------------------------------------------------------------
+
+
+# Sprint Review Schedule
+
+- ⏰ **Start time:** 11:00  
+- 🍴 **Lunch break:** 12:00–13:00  
+- ⏱ **Each group:** 20 minutes  
+- 👥 **Total groups:** 9  
+- ⚖️ **Fair rotation:** No group always presents first or last
+
+---
+
+## 🟦 Sprint 1 Review
+**Order: Group 1 → 9**
+
+| Order | Group | Start | End |
+|------:|-------|-------|-----|
+| 1 | Group 1 | 11:00 | 11:20 |
+| 2 | Group 2 | 11:20 | 11:40 |
+| 3 | Group 3 | 11:40 | 12:00 |
+|  | **Lunch Break** | **12:00** | **13:00** |
+| 4 | Group 4 | 13:00 | 13:20 |
+| 5 | Group 5 | 13:20 | 13:40 |
+| 6 | Group 6 | 13:40 | 14:00 |
+| 7 | Group 7 | 14:00 | 14:20 |
+| 8 | Group 8 | 14:20 | 14:40 |
+| 9 | Group 9 | 14:40 | 15:00 |
+
+---
+
+## 🟩 Sprint 2 Review
+**Order: Group 9 → 1**
+
+| Order | Group | Start | End |
+|------:|-------|-------|-----|
+| 1 | Group 9 | 11:00 | 11:20 |
+| 2 | Group 8 | 11:20 | 11:40 |
+| 3 | Group 7 | 11:40 | 12:00 |
+|  | **Lunch Break** | **12:00** | **13:00** |
+| 4 | Group 6 | 13:00 | 13:20 |
+| 5 | Group 5 | 13:20 | 13:40 |
+| 6 | Group 4 | 13:40 | 14:00 |
+| 7 | Group 3 | 14:00 | 14:20 |
+| 8 | Group 2 | 14:20 | 14:40 |
+| 9 | Group 1 | 14:40 | 15:00 |
+
+---
+
+## 🟨 Sprint 3 Review
+**Order: Group 2 → 9 → 1 (rotated start)**
+
+| Order | Group | Start | End |
+|------:|-------|-------|-----|
+| 1 | Group 2 | 11:00 | 11:20 |
+| 2 | Group 3 | 11:20 | 11:40 |
+| 3 | Group 4 | 11:40 | 12:00 |
+|  | **Lunch Break** | **12:00** | **13:00** |
+| 4 | Group 5 | 13:00 | 13:20 |
+| 5 | Group 6 | 13:20 | 13:40 |
+| 6 | Group 7 | 13:40 | 14:00 |
+| 7 | Group 8 | 14:00 | 14:20 |
+| 8 | Group 9 | 14:20 | 14:40 |
+| 9 | Group 1 | 14:40 | 15:00 |
+
+---
+
+## 🟥 Sprint 4 Review
+**Order: Group 1 → 9 → 2 (reverse of Sprint 3)**
+
+| Order | Group | Start | End |
+|------:|-------|-------|-----|
+| 1 | Group 1 | 11:00 | 11:20 |
+| 2 | Group 9 | 11:20 | 11:40 |
+| 3 | Group 8 | 11:40 | 12:00 |
+|  | **Lunch Break** | **12:00** | **13:00** |
+| 4 | Group 7 | 13:00 | 13:20 |
+| 5 | Group 6 | 13:20 | 13:40 |
+| 6 | Group 5 | 13:40 | 14:00 |
+| 7 | Group 4 | 14:00 | 14:20 |
+| 8 | Group 3 | 14:20 | 14:40 |
+| 9 | Group 2 | 14:40 | 15:00 |
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 ## Specific Points to Address During the Review
 
