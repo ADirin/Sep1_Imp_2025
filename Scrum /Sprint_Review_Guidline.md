@@ -62,7 +62,7 @@ The Sprint Review is an opportunity for teams to demonstrate their progress, gat
 
 # Sprint Review Schedule
 -  ⏰ **Zoom lecture** starts at 9:00 
-- ⏰ **Start time:** 11:00  
+- ⏰ **Sprint Review** starts at 11:00  
 - 🍴 **Lunch break:** 12:00–13:00  
 - ⏱ **Each group:** 20 minutes  
 - 👥 **Total groups:** 9  
