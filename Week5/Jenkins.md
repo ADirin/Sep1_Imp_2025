@@ -120,6 +120,60 @@ Follow these instructions to configure **JDK**, **Maven**, and **Git** in your J
 
 ![Jenkins JDK](/Images/GitJenkins.JPG)
 
+-------------------------------------------------------------------
+## Connecting Jenkins to GitHub (IMPORTANT)
+
+### Create a GitHub Personal Access Token (PAT) for Jenkins
+A short step‑by‑step guide for students to connect Jenkins to GitHub.
+
+1. Log in to GitHub
+Go to: https://github.com/login
+
+2. Open the Token Settings
+Go to:
+*Profile → Settings → Developer settings → Personal access tokens → Tokens (classic)*
+or directly: https://github.com/settings/tokens
+
+
+3. Create a New Token
+Click:
+**Generate new token (classic)**
+Re‑enter your password if asked.
+
+4. Configure the Token
+Note / Name: Jenkins Access Token
+Expiration: **No expiration (recommended for CI)**
+
+
+5. Select Scope
+Scroll and check:
+[✔] repo    (Full access to private/public repositories)
+This permission is required so Jenkins can clone your repository.
+
+
+6. Generate the Token
+Click Generate token.
+🔴 **Copy** the token immediately — GitHub shows it only once.
+It looks like:
+ghp_xxxxxxxxxxxxxxxxxxxxx
+
+
+7. Add the Token to Jenkins
+
+1. *Open Jenkins → Manage Jenkins → Credentials*
+2. Add New Credential
+- Kind: Username with password
+- Username: your GitHub username (or just git)
+- Password: **paste the PAT**
+- ID: e.g. github-pat
+3. Save.
+
+8. Use the PAT in a Jenkins Job
+In your Freestyle project:
+- Source Code Management → Git
+- Repository URL:
+  https://github.com/<your-username>/<your-repo>.git
+- Credentials: select github-pat
 ----------------------------------------------------------------------
 
 ### Step 2: Configure the plugins
