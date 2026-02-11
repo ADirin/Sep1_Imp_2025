@@ -46,7 +46,8 @@ This flexibility makes Jenkins suitable for a variety of software development wo
 
 ## 1. Settings  JDK, Maven, and Git in Jenkins
 
-# The screenshots may in your Jenkins different than what you seen here since Jenkins continously update the UI, the main setting which is defined here is the same as the new version anyway
+ **Note:**  
+       The screenshots in your Jenkins environment may differ from those shown here due to continuous UI updates. However, the core settings described remain the    same in the latest versions.
 
 Follow these instructions to configure **JDK**, **Maven**, and **Git** in your Jenkins environment.
 
