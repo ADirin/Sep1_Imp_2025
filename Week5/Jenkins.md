@@ -139,13 +139,20 @@ or directly: https://github.com/settings/tokens
 Click:
 **Generate new token (*classic*)**
 Re‑enter your password if asked.
+-------------------------------------------------------------------------------------------
 
-4. Configure the Token
+![PAT](/Images/PAT1.jpg)
+
+------------------------------------------------------------------------------------------
+
+
+
+5. Configure the Token
 Note / Name: Jenkins Access Token
 Expiration: **No expiration (recommended for CI)**
 
 
-5. Select Scope
+6. Select Scope
 Scroll and check:
 [✔] repo    (Full access to private/public repositories)
 This permission is required so Jenkins can clone your repository. Follow the exact setting of the following image
