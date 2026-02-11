@@ -149,17 +149,19 @@ Expiration: **No expiration (recommended for CI)**
 Scroll and check:
 [✔] repo    (Full access to private/public repositories)
 This permission is required so Jenkins can clone your repository.
-[PAT](/Images/PAT.jpg)
+
+![PAT](/Images/PAT.jpg)
 
 
-6. Generate the Token
+
+7. Generate the Token
 Click Generate token.
 🔴 **Copy** the token immediately — GitHub shows it only once.
 It looks like:
 ghp_xxxxxxxxxxxxxxxxxxxxx
 
 
-7. Add the Token to Jenkins
+8. Add the Token to Jenkins
 
 1. *Open Jenkins → Manage Jenkins → Credentials*
 2. Add New Credential
