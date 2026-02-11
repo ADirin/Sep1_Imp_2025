@@ -137,7 +137,7 @@ or directly: https://github.com/settings/tokens
 
 3. Create a New Token
 Click:
-**Generate new token (classic)**
+**Generate new token (*classic*)**
 Re‑enter your password if asked.
 
 4. Configure the Token
