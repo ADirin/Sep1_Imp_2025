@@ -149,6 +149,7 @@ Expiration: **No expiration (recommended for CI)**
 Scroll and check:
 [✔] repo    (Full access to private/public repositories)
 This permission is required so Jenkins can clone your repository.
+[PAT](/Images/PAT.jpg)
 
 
 6. Generate the Token
