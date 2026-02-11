@@ -148,11 +148,11 @@ Expiration: **No expiration (recommended for CI)**
 5. Select Scope
 Scroll and check:
 [✔] repo    (Full access to private/public repositories)
-This permission is required so Jenkins can clone your repository.
-
+This permission is required so Jenkins can clone your repository. Follow the exact setting of the following image
+------------------------------------------------------------
 ![PAT](/Images/PAT.jpg)
 
-
+-----------------------------------------------------------
 
 7. Generate the Token
 Click Generate token.
