@@ -121,7 +121,7 @@ This flexibility makes Jenkins suitable for a variety of software development wo
 ![Jenkins JDK](/Images/GitJenkins.JPG)
 
 -------------------------------------------------------------------
-## Connecting Jenkins to GitHub (IMPORTANT)
+## Connecting Jenkins to GitHub (👉 IMPORTANT)
 
 ### Create a GitHub Personal Access Token (PAT) for Jenkins
 A short step‑by‑step guide for students to connect Jenkins to GitHub.
