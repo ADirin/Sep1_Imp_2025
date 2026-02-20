@@ -17,9 +17,9 @@ Go to File > Settings > Plugins and search for the Docker plugin. Install it and
 In your project root, right-click and select New > File, name it Dockerfile.
 Write your Docker instructions. Example for a Java app
 ```java
-FROM openjdk:latest
+FROM maven:3.9.6-eclipse-temurin-17
 WORKDIR /app
-COPY POM.xml .
+COPY pom.xml .
 COPY . /app
 RUN mvn package
 CMD ["java", "-jar", "target/YOURJAR.jar"]
