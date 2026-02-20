@@ -19,7 +19,7 @@ Write your Docker instructions. Example for a Java app
 ```java
 FROM openjdk:latest
 WORKDIR /app
-COPY POM.xml
+COPY POM.xml .
 COPY . /app
 RUN mvn package
 CMD ["java", "-jar", "target/YOURJAR.jar"]
