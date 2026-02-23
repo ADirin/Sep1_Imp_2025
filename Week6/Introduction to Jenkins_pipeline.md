@@ -188,7 +188,8 @@ sequenceDiagram
    - Under the "Pipeline" section, choose "Pipeline script from SCM" and add the github repository URL (public)
    - Write the following script:
 
-    ```groovy
+  ```groovy
+ 
   pipeline {
     agent any
 
@@ -255,7 +256,8 @@ sequenceDiagram
 
     }
  }
-````
+
+```
 
 3. **Save and Run**
    - Save the job and click "Build Now" to run the pipeline.
