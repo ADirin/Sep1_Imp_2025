@@ -12,4 +12,9 @@ Based on your Week 5 in-class assignment (Temperature Converter), implement the 
 Share the link and screenshots in Oma
 1. GitHub repository link
 2. Screenshot of a successfully executed pipeline (e.g., Ocean Blue view)
-3. Screenshots showing the successful execution of the local Docker image
+
+![Sample output] (/Images/stage.jpg)
+
+4. Screenshots showing the successful execution of the local Docker image
+
+![Sample output] (/Images/sample.jpg)
