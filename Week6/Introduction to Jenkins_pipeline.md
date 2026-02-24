@@ -1,3 +1,5 @@
+### [Lecture demo] https://github.com/ADirin/Week6_3011_demo.git
+
 #  Using pipeline in Jenkins:
 
 Jenkins Pipeline is a powerful tool for managing complex build and deployment workflows, making it an essential skill for students interested in DevOps and continuous integration/continuous delivery (CI/CD).
