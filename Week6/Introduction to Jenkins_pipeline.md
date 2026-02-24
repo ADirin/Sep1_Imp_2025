@@ -193,7 +193,7 @@ sequenceDiagram
     - go to hub.docker.com
     - go to account setting
 
-![Docker path](/Images/dock2.jpg)
+![Docker path](/Images/hub1.jpg)
 
   
     - select personal access tokens
@@ -201,7 +201,7 @@ sequenceDiagram
         - experation: none
         - read /write permission
         - copy the generate tokens
-![Docker path](/Images/dock2.jpg)
+![Docker path](/Images/act2.jpg)
 
   6.  In Jenkins for password paste the token you have created
   7.  Add a name for the Docker credentilas : Docker-Hub
