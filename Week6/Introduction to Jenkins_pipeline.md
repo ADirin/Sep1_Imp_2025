@@ -186,6 +186,8 @@ sequenceDiagram
 ![Docker path](/Images/dockerSetUP.jpg)
    
 4. In jenkins go to creadention --> select ayatem--> select gloabale credention ---> add credentials
+
+![Docker path](/Images/doc2.jpg)
     - give your docker destop user name
     - go to hub.docker.com
     - go to account setting
@@ -194,8 +196,8 @@ sequenceDiagram
         - experation: none
         - read /write permission
         - copy the generate tokens
-  5.  In Jenkins for password paste the token you have created
-  6.  Add a name for the Docker credentilas : Docker-Hub
+  6.  In Jenkins for password paste the token you have created
+  7.  Add a name for the Docker credentilas : Docker-Hub
 
 
 
