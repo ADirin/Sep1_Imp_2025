@@ -182,8 +182,8 @@ sequenceDiagram
 2.  In jenkins go to tools and find the docker (usuall at the end of the page), give the docker desktop path.
     -  You can find the path from the edit system enviroment--> environment variable ---> path and copy the path for example 'C:\Program Files\Docker\Docker\resources\bin'
   
-   ![Docker path setup] (/Images/dockerSetUp.jpg)
-
+  
+![Docker pathK](/Images/dockerSetUP.JPG)
    
 4. In jenkins go to creadention --> select ayatem--> select gloabale credention ---> add credentials
     - give your docker destop user name
