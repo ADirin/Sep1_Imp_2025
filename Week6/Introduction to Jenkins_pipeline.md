@@ -187,7 +187,8 @@ sequenceDiagram
    
 4. In jenkins go to creadention --> select ayatem--> select gloabale credention ---> add credentials
 
-![Docker path](/Images/doc2.jpg)
+![Docker path](/Images/dock2.jpg)
+
     - give your docker destop user name
     - go to hub.docker.com
     - go to account setting
