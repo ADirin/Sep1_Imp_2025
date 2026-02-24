@@ -189,14 +189,20 @@ sequenceDiagram
 
 ![Docker path](/Images/dock2.jpg)
 
-    - give your docker destop user name
+    - give your docker **destop user name**
     - go to hub.docker.com
     - go to account setting
+
+![Docker path](/Images/dock2.jpg)
+
+  
     - select personal access tokens
         - generate token
         - experation: none
         - read /write permission
         - copy the generate tokens
+![Docker path](/Images/dock2.jpg)
+
   6.  In Jenkins for password paste the token you have created
   7.  Add a name for the Docker credentilas : Docker-Hub
 
