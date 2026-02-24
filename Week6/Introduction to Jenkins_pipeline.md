@@ -172,9 +172,9 @@ sequenceDiagram
 
 ```
 
--------------------------
 
-# Jenkins configuration to recognize the docker (follow the step beloow)
+# IMPORTANT setup
+## Jenkins configuration to recognize the docker (follow the step beloow)
 
 1.  In jenkins go to manage jenkins--> select plugins in avaliable plugins select the docker, docker API plugin
 2.  In jenkins go to tools and find the docker (usuall at the end of the page), give the docker desktop path.
@@ -195,14 +195,6 @@ sequenceDiagram
 
 
 
-
-
-
-
-
-
-
-----------------------------
 ## 3. Creating a Jenkins Pipeline in GitHUb
 
 ### Steps to Create a Declarative Pipeline
