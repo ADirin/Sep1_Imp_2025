@@ -15,6 +15,6 @@ Share the link and screenshots in Oma
 
 ![Sample output](/Images/stage.jpg)
 
-4. Screenshots showing the successful execution of the local Docker image, See the sample outout from class demo (TravelCal.java)
+4. Screenshots showing the successful execution of the [labs.play.docker](https://labs.play-with-docker.com/) Docker image, See the sample outout from class demo (TravelCal.java)
 
 ![Sample output](/Images/sample.jpg)
