@@ -349,18 +349,6 @@ Use the `-it` flag with docker run to run the container in interactive mode, all
 ```cmd
 docker run -it your-app-name
 ```
-For desktop docker use the command line for the execution
-
-![Docker Test](/Images/dockerTest.JPG)
-
- From GitHub to Docker Hub through Jenkins
-
-> ![DevOps Roadmap](/Images/gitJenHub.JPG)
-
-Jacoco report
-
-> ![DevOps Roadmap](/Images/jenkinsTest.JPG)
-
 
 Running the Image remotely from Hub.docker.com:
 
