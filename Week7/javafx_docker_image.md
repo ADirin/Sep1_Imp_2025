@@ -10,11 +10,12 @@
 
          1. Build a fat JAR with Maven (using maven-shade-plugin).
 
-         2. Create a Docker image with OpenJDK 17.
+         2. Create a Docker image with OpenJDK 17 / 21 / 25.
+                  -if you change make sure change also the maven runtime version: -->settings-->build--->maven--->runner, select the correct                            version of your run time
 
          3. Install GUI/X11 libraries inside the container.
 
-         4. Download and extract the JavaFX SDK.
+         4. Download and extract the JavaFX SDK or use the dependencies.
 
          5. Copy the application JAR into the container.
 
