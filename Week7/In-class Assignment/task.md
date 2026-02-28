@@ -20,4 +20,4 @@ After implementing the functions and run the jenkins pipeline :
 
   - Take screenshot of the docker image UI performance.
 
-  - **submit** your repository link along with  screenshots (point 2 and 3 ) as a PDF on moodle.
+  - **submit** your repository link along with  screenshots (point 2 and 3 ) as a PDF on oma.
