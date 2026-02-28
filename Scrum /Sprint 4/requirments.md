@@ -13,11 +13,11 @@
 
 ---
 
-## 👨‍💻 Sprint 4 Scrum Master Tasks  
+## 👨‍💻 Sprint 4 Scrum Master Tasks (10 points)  
 
 ---
 
-### 🔹 **Task 1: Finalize the Product Functionality**  
+### 🔹 **Task 1: Finalize the Product Functionality**   (2 points)
 **Points:** 2  
 **Deadline:** *Ready by Week 8*  
 
@@ -32,7 +32,7 @@
 
 ---
 
-### 🔹 **Task 2: Create Docker Image (GUI Docker Image)**  
+### 🔹 **Task 2: Create Docker Image (GUI Docker Image)**  (4 points)
 **Points:** 4  
 **Deadline:** *Ready by Week 8*  
 
@@ -60,7 +60,7 @@
 
 ---
 
-### 🔹 **Task 4: Share Functional Prototype with the Class**  
+### 🔹 **Task 4: Share Functional Prototype with the Class**  (4 points)
 **Points:** 3  
 **Deadline:** *Ready by Week 8*  
 
