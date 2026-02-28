@@ -1,7 +1,7 @@
 # Assignment
 ## Description
 
-Extend last week’s assignment (Temperature Converter) by creating a Docker image, pushing it to Docker Hub (docker.com), and finally testing the image at https://labs.play-with-docker.com/
+Extend last week’s assignment (Temperature Converter) by creating a Docker image, pushing it to Docker Hub (docker.com), and finally testing the image through your local docker desktop
 .
 
 ## Submission Requirements
