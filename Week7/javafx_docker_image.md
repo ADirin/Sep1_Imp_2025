@@ -10,7 +10,7 @@
 
 ## Try the following demo:
 
-Try the [travle_demmo] https://github.com/ADirin/week7_travel_demo.git and the code bellow
+Try the [travle_demo] https://github.com/ADirin/week7_travel_demo.git and the code bellow
 
 
 ## The process is:
