@@ -1,3 +1,6 @@
+[Lecture demo_with database] https://github.com/ADirin/sum-product_fx.git
+
+
 # JavaFX Docker Image with Xming (Windows)
 
 - JavaFX apps need a graphical display to show windows and UI. Docker containers (especially Linux-based ones) don’t have a display of their own.
