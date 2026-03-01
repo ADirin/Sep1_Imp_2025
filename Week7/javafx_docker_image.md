@@ -344,7 +344,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ADirin/TimeCal.git'
+                git branch: 'master', url: 'https://github.com/ADirin/week7_travel_demo.git'
             }
         }
 
