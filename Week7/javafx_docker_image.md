@@ -8,6 +8,10 @@
 - that is why we need to install **VcXsrv** or [**Xming**] (https://sourceforge.net/projects/xming/) on Windows to run a JavaFX app in Docker
 - These tools receive the GUI output from the container and show it on your screen.
 
+## Try the following demo:
+
+Try the [travle_demmo] https://github.com/ADirin/week7_travel_demo.git and the code bellow
+
 
 ## The process is:
 
@@ -108,12 +112,11 @@ javafx-celsius-converter/
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>javafx-celsius-converter</artifactId>
+    <artifactId>average-speed-fx</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <javafx.version>21</javafx.version>
     </properties>
 
@@ -131,9 +134,10 @@ javafx-celsius-converter/
     </dependencies>
 
     <build>
-        <finalName>tempconv</finalName>
+        <finalName>averagespeed</finalName>
+
         <plugins>
-            <!-- Compiler plugin -->
+            <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -144,7 +148,7 @@ javafx-celsius-converter/
                 </configuration>
             </plugin>
 
-            <!-- Shade plugin to create a fat JAR -->
+            <!-- Shade Plugin (Fat JAR) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -166,7 +170,7 @@ javafx-celsius-converter/
                 </executions>
             </plugin>
 
-            <!-- JavaFX Maven plugin (optional for local dev) -->
+            <!-- Optional JavaFX plugin for local run -->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -177,6 +181,7 @@ javafx-celsius-converter/
             </plugin>
         </plugins>
     </build>
+
 </project>
 ````
 
@@ -192,26 +197,49 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+
+    public static double speedAverage(double distance, double time) {
+        return distance / time;
+    }
+
     @Override
     public void start(Stage stage) {
-        Label label = new Label("Enter Celsius:");
-        TextField celsiusInput = new TextField();
-        Button convertButton = new Button("Convert");
+
+        Label distanceLabel = new Label("Enter Distance:");
+        TextField distanceField = new TextField();
+
+        Label timeLabel = new Label("Enter Time:");
+        TextField timeField = new TextField();
+
+        Button calculateButton = new Button("Calculate Average Speed");
         Label resultLabel = new Label();
 
-        convertButton.setOnAction(e -> {
+        calculateButton.setOnAction(e -> {
             try {
-                double celsius = Double.parseDouble(celsiusInput.getText());
-                double fahrenheit = (celsius * 9 / 5) + 32;
-                resultLabel.setText("Fahrenheit: " + fahrenheit);
+                double distance = Double.parseDouble(distanceField.getText());
+                double time = Double.parseDouble(timeField.getText());
+
+                if (time == 0) {
+                    resultLabel.setText("Time cannot be zero!");
+                    return;
+                }
+
+                double speed = speedAverage(distance, time);
+                resultLabel.setText("Average Speed: " + speed);
             } catch (NumberFormatException ex) {
                 resultLabel.setText("Invalid input!");
             }
         });
 
-        VBox root = new VBox(10, label, celsiusInput, convertButton, resultLabel);
-        Scene scene = new Scene(root, 300, 200);
-        stage.setTitle("Celsius to Fahrenheit");
+        VBox root = new VBox(10,
+                distanceLabel, distanceField,
+                timeLabel, timeField,
+                calculateButton,
+                resultLabel
+        );
+
+        Scene scene = new Scene(root, 350, 250);
+        stage.setTitle("Average Speed Calculator");
         stage.setScene(scene);
         stage.show();
     }
@@ -224,6 +252,8 @@ public class Main extends Application {
 # FROM openjdk:17-slim
 
 ````
+FROM eclipse-temurin:21-jdk
+
 WORKDIR /app
 
 # Install GUI libraries
@@ -231,17 +261,17 @@ RUN apt-get update && apt-get install -y \
     libx11-6 libxext6 libxrender1 libxtst6 libxi6 libgtk-3-0 mesa-utils wget unzip \
     && rm -rf /var/lib/apt/lists/*
 
-# Download and unzip JavaFX Linux SDK
+# Download JavaFX SDK
 RUN mkdir -p /javafx-sdk \
-    && wget -O javafx.zip https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_linux-x64_bin-sdk.zip \
+    && wget -O javafx.zip https://download2.gluonhq.com/openjfx/21/openjfx-21_linux-x64_bin-sdk.zip \
     && unzip javafx.zip -d /javafx-sdk \
-    && mv /javafx-sdk/javafx-sdk-21.0.2/lib /javafx-sdk/lib \
-    && rm -rf /javafx-sdk/javafx-sdk-21.0.2 javafx.zip
+    && mv /javafx-sdk/javafx-sdk-21/lib /javafx-sdk/lib \
+    && rm -rf /javafx-sdk/javafx-sdk-21 javafx.zip
 
-# Copy your fat JAR
-COPY target/tempconv.jar app.jar
+# Copy fat JAR
+COPY target/averagespeed.jar app.jar
 
-# Set X11 display (Windows host with Xming/X11)
+# Set DISPLAY for Windows (Xming)
 ENV DISPLAY=host.docker.internal:0.0
 
 # Run JavaFX app
