@@ -11,6 +11,7 @@
 ## Try the following demo:
 
 Try the [travle_demo] https://github.com/ADirin/week7_travel_demo.git and the code bellow
+Try this the [Travel demo+ db] https://github.com/ADirin/week7_calculator_with_db.git, remember that you may need to adjust the ports in based on your own setups.
 
 
 ## The process is:
