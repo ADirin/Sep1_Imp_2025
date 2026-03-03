@@ -1,4 +1,4 @@
-[Lecture demo_with database] https://github.com/ADirin/sum-product_fx.git
+[Lecture demo_with database] https://github.com/ADirin/week7_calculator_fx_db.git
 
 
 # JavaFX Docker Image with Xming (Windows)
