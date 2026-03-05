@@ -75,7 +75,11 @@
 - ✅ **Feedback:** Gathered peer suggestions and addressed them. Highlighted **individual contributions** & challenges solved.  
 - ✅ **Finalizing Project (GitHub + Trello/Jira):**  
   - Updated documentation  
-  - Completed **README** as instructed  
+  - Completed **README** as instructed
+    1.  Description of the project
+    2.  Technology stack
+    3.  Arichteture Design (ER and Use Case diagram) very short elaboration of the image
+    4.  Link to the sprint Report folder  
   - Updated **Sprint Reports** in GitHub  
 
 ---
