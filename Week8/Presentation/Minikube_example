@@ -18,7 +18,7 @@ speed-api/
 └─ README.md
 ```
 
----
+
 
 # 📄 `pom.xml`
 
@@ -184,4 +184,3 @@ spec:
       port: 8080
       targetPort: 8080
       nodePort: 30080
-```
