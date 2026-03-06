@@ -47,19 +47,16 @@ speed-api/
     </parent>
 
     <dependencies>
-        <!-- REST API -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Optional: validation if you want to add constraints later -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- Optional: tests -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -69,7 +66,6 @@ speed-api/
 
     <build>
         <plugins>
-            <!-- Package as executable jar -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -127,7 +123,7 @@ public class SpeedController {
 # 📄 `src/main/resources/application.properties`
 
 ```properties
-# Uncomment to change the port from 8080 to 9090
+# Uncomment to change the port:
 # server.port=9090
 ```
 
@@ -151,7 +147,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ---
 
-# 📄 `deployment.yaml` (8080)
+# 📄 `deployment.yaml`
 
 ```yaml
 apiVersion: apps/v1
@@ -188,39 +184,4 @@ spec:
       port: 8080
       targetPort: 8080
       nodePort: 30080
-```
-
----
-
-# 📄 `README.md`
-
-```markdown
-# Speed API
-
-A minimal Spring Boot REST API that calculates speed = distance / time.
-
-## Example
-GET /speed?distance=100&time=2 → 50.0
-
-## Build & Run
-
-```bash
-mvn clean package
-mvn spring-boot:run
-```
-
-## Docker
-
-```bash
-docker build -t speed-api:1.0 .
-docker run -p 8080:8080 speed-api:1.0
-```
-
-## Minikube
-
-```bash
-minikube start
-minikube image load speed-api:1.0
-kubectl apply -f deployment.yaml
-```
 ```
