@@ -1,0 +1,347 @@
+# speed-api Project Structure
+
+```
+speed-api/
+├─ pom.xml
+├─ Dockerfile
+├─ deployment.yaml
+├─ src/
+│  └─ main/
+│     ├─ java/
+│     │  └─ com/
+│     │     └─ example/
+│     │        └─ speedapi/
+│     │           ├─ SpeedApiApplication.java
+│     │           └─ SpeedController.java
+│     └─ resources/
+│        └─ application.properties
+└─ README.md
+```
+
+---
+
+# 📄 `pom.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>speed-api</artifactId>
+    <version>1.0.0</version>
+    <name>speed-api</name>
+    <description>Simple REST API to calculate speed = distance / time</description>
+
+    <properties>
+        <java.version>17</java.version>
+        <spring.boot.version>3.2.0</spring.boot.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>${spring.boot.version}</version>
+    </parent>
+
+    <dependencies>
+        <!-- REST API -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Optional: validation if you want to add constraints later -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!-- Optional: tests -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Package as executable jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
+---
+
+# 📄 `src/main/java/com/example/speedapi/SpeedApiApplication.java`
+
+```java
+package com.example.speedapi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpeedApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpeedApiApplication.class, args);
+    }
+}
+```
+
+---
+
+# 📄 `src/main/java/com/example/speedapi/SpeedController.java`
+
+```java
+package com.example.speedapi;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SpeedController {
+
+    @GetMapping("/speed")
+    public double calculateSpeed(@RequestParam double distance, @RequestParam double time) {
+        if (time == 0) {
+            throw new IllegalArgumentException("Time cannot be zero");
+        }
+        return distance / time;
+    }
+}
+```
+
+---
+
+# 📄 `src/main/resources/application.properties`
+
+```properties
+# Uncomment to change the port from 8080 to 9090
+# server.port=9090
+```
+
+---
+
+# 📄 `Dockerfile`
+
+```dockerfile
+# Build stage (optional but recommended for multi-stage)
+FROM eclipse-temurin:17-jdk-alpine AS build
+WORKDIR /src
+COPY . .
+# Build the application jar
+RUN ./mvnw -q -DskipTests package || mvn -q -DskipTests package
+
+# Runtime image
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
+# Copy the built jar from target folder
+COPY target/speed-api-1.0.0.jar app.jar
+
+# If you changed the port, update EXPOSE
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+---
+
+# 📄 `deployment.yaml` (8080 version)
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speed-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: speed-api
+  template:
+    metadata:
+      labels:
+        app: speed-api
+    spec:
+      containers:
+        - name: speed-api
+          image: speed-api:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: speed-api-service
+spec:
+  type: NodePort
+  selector:
+    app: speed-api
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+      nodePort: 30080
+```
+
+---
+
+# 📄 `deployment.yaml` (9090 version)
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speed-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: speed-api
+  template:
+    metadata:
+      labels:
+        app: speed-api
+    spec:
+      containers:
+        - name: speed-api
+          image: speed-api:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9090
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: speed-api-service
+spec:
+  type: NodePort
+  selector:
+    app: speed-api
+  ports:
+    - name: http
+      port: 9090
+      targetPort: 9090
+      nodePort: 30090
+```
+
+---
+
+# 📄 `README.md`
+
+```markdown
+# Speed API
+
+A minimal Spring Boot REST API that calculates speed = distance / time.
+
+## Endpoints
+
+- `GET /speed?distance=100&time=2` → `50.0`
+
+## Build & Run (Local)
+
+```bash
+mvn clean package
+mvn spring-boot:run
+# or
+java -jar target/speed-api-1.0.0.jar
+```
+
+Open:  
+http://localhost:8080/speed?distance=100&time=2
+
+### Change port:
+Edit `src/main/resources/application.properties`:
+
+```
+server.port=9090
+```
+
+---
+
+# Docker
+
+```bash
+mvn clean package
+docker build -t speed-api:1.0 .
+docker run -p 8080:8080 speed-api:1.0
+```
+
+---
+
+# Minikube (Windows)
+
+```bash
+minikube start
+minikube image load speed-api:1.0
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get svc speed-api-service
+```
+
+Open in browser:
+
+```
+http://$(minikube ip):30080/speed?distance=150&time=3
+```
+
+---
+
+# Notes
+
+- If port 8080 is busy, kill the process:
+  ```powershell
+  netstat -ano | findstr :8080
+  taskkill /PID <pid> /F /T
+  ```
+
+---
+
+# Quick Commands
+
+Build jar:
+```powershell
+mvn clean package
+```
+
+Run locally:
+```powershell
+mvn spring-boot:run
+java -jar target/speed-api-1.0.0.jar
+```
+
+Docker:
+```powershell
+docker build -t speed-api:1.0 .
+docker run -p 8080:8080 speed-api:1.0
+```
+
+Minikube:
+```powershell
+minikube start
+minikube image load speed-api:1.0
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get svc speed-api-service
+```
+
+8080 version:
+```
+http://<minikube-ip>:30080/speed?distance=120&time=3
+```
+
+9090 version:
+```
+http://<minikube-ip>:30090/speed?distance=120&time=3
+```
