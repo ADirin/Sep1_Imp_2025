@@ -1,4 +1,4 @@
-this what it shows now: # speed-api Project Structure
+github repo of the [following example in windows environment] https://github.com/ADirin/week8_minikube_example.git 
 
 ```
 speed-api/
