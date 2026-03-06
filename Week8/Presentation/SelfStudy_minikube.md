@@ -74,4 +74,114 @@ speed-api/
     </build>
 </project>
 ```
-``
+
+---
+
+# 📄 `src/main/java/com/example/speedapi/SpeedApiApplication.java`
+
+```java
+package com.example.speedapi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpeedApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpeedApiApplication.class, args);
+    }
+}
+```
+
+---
+
+# 📄 `src/main/java/com/example/speedapi/SpeedController.java`
+
+```java
+package com.example.speedapi;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SpeedController {
+
+    @GetMapping("/speed")
+    public double calculateSpeed(@RequestParam double distance, @RequestParam double time) {
+        if (time == 0) {
+            throw new IllegalArgumentException("Time cannot be zero");
+        }
+        return distance / time;
+    }
+}
+```
+
+---
+
+# 📄 `src/main/resources/application.properties`
+
+```properties
+# Uncomment to change the port:
+# server.port=9090
+```
+
+---
+
+# 📄 `Dockerfile`
+
+```dockerfile
+FROM eclipse-temurin:17-jdk-alpine AS build
+WORKDIR /src
+COPY . .
+RUN ./mvnw -q -DskipTests package || mvn -q -DskipTests package
+
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
+COPY target/speed-api-1.0.0.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+---
+
+# 📄 `deployment.yaml`
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speed-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: speed-api
+  template:
+    metadata:
+      labels:
+        app: speed-api
+    spec:
+      containers:
+        - name: speed-api
+          image: speed-api:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: speed-api-service
+spec:
+  type: NodePort
+  selector:
+    app: speed-api
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+      nodePort: 30080
+```
