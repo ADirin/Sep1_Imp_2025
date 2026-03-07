@@ -122,7 +122,7 @@ Final Course Grade =
 
 ## Pass / Fail Rule (Optional)
 
-- **Final Grade < 3.0 → Fail**
+- **Final Grade < 1.5 → Fail**
 - **Final Grade ≥ 3.0 → Pass**
 
 ---
