@@ -134,4 +134,5 @@ Final Course Grade =
 
 - Peer review may be used to **adjust individual grades** if contributions differ significantly.
 - Failure to submit sprint reports or peer reviews may result in **zero points** for that component.
+- In-class assignment does not impact to overall grade however they are compulsary to return for receiving the grade to the wihi by the time of course evaluation
 
