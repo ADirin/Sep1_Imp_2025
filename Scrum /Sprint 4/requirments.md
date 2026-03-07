@@ -23,7 +23,7 @@
 
 **Focus:** Ensure all planned features are fully implemented and operational through testing and debugging.  
 
-- **Feature Implementation:** Authentication, data visualization, API integration fully implemented.  
+- **Feature Implementation:** Authentication, data visualization (UML, ER), API integration fully implemented.  
 - **Bug Fixing:** Resolved data display errors, UI glitches, and error handling via debugging/log analysis.  
 - **Testing:**  
   - Verified **business logic accuracy**.  
