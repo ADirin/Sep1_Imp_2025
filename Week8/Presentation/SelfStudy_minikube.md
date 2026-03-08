@@ -185,3 +185,177 @@ spec:
       targetPort: 8080
       nodePort: 30080
 ```
+## How to run the application
+
+
+# 📄 `README.md`
+
+```markdown
+# Speed API
+
+A minimal Spring Boot REST API that calculates speed = distance / time.
+
+## Endpoints
+
+- `GET /speed?distance=100&time=2` → `50.0`
+
+## Build & Run (Local)
+
+```bash
+mvn clean package
+mvn spring-boot:run
+# or
+java -jar target/speed-api-1.0.0.jar
+```
+
+Open:  
+http://localhost:8080/speed?distance=100&time=2
+
+### Change port:
+Edit `src/main/resources/application.properties`:
+
+```
+server.port=9090
+```
+
+---
+
+# Docker
+
+```bash
+mvn clean package
+docker build -t speed-api:1.0 .
+docker run -p 8080:8080 speed-api:1.0
+```
+
+---
+
+# Minikube (Windows)
+
+```bash
+minikube start
+minikube image load speed-api:1.0
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get svc speed-api-service
+```
+
+Open in browser:
+
+```
+http://$(minikube ip):30080/speed?distance=150&time=3
+```
+
+---
+
+# Notes
+
+- If port 9090 is busy, kill the process:
+  ```powershell
+  netstat -ano | findstr :8080
+  taskkill /PID <pid> /F /T
+  ```
+
+---
+
+# Quick Commands
+
+To run the minikube:
+Minikube:
+```powershell
+minikube start
+minikube image load speed-api:1.0
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get svc speed-api-service
+```
+
+
+
+Build jar:
+```powershell
+mvn clean package
+```
+
+Run locally:
+```powershell
+mvn spring-boot:run
+java -jar target/speed-api-1.0.0.jar
+```
+
+Docker:
+```powershell
+docker build -t speed-api:1.0 .
+docker run -p 9090:9090 speed-api:1.0
+```
+
+
+
+Finally in your browser run
+```html
+http://localhost:9090/speed?distance=100&time=2
+
+```
+
+9090 version:
+```
+http://<minikube-ip>:30090/speed?distance=120&time=3
+
+````
+## If the port busy
+
+```# Fixing Port Conflicts on Windows
+
+If your application or Docker container cannot start because the port is already in use, follow these steps.
+
+---
+
+## 1️⃣ Find which process is using the port
+
+Open PowerShell and run:
+
+```powershell
+netstat -ano | findstr :9090
+
+```
+Output example
+TCP    0.0.0.0:9090    0.0.0.0:0    LISTENING    12345
+
+2️⃣ Kill the process
+Terminate the process holding the por
+````
+taskkill /PID 12345 /F
+````
+3️⃣ (Optional) Change your application's port
+
+In Spring Boot, you can run on a different port without killing processes:
+
+Command line:
+```
+mvn spring-boot:run -Dserver.port=9091
+```
+Or in application.properties:
+
+```
+server.port=9091
+```
+4️⃣ (Optional) Check Docker containers
+
+Docker containers can also block ports. List all running containers:
+
+```
+docker ps
+```
+Stop/remove any container using the conflicting port:
+
+```
+docker stop <container_id>
+docker rm <container_id>
+
+```
+Tip: Always verify the port is free before starting your app:
+
+```
+netstat -ano | findstr :9090
+
+```
