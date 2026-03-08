@@ -1,5 +1,7 @@
 github repo of the [following example in windows environment] https://github.com/ADirin/week8_minikube_example.git 
 
+Create new project similar as the figure below:
+
 ```
 speed-api/
 ├─ pom.xml
