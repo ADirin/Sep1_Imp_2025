@@ -77,9 +77,116 @@ speed-api/
 </project>
 ```
 
+## Short description on new tags:
+ - Properties
+```xml
+
+<properties>
+    <java.version>17</java.version>
+    <spring.boot.version>3.2.0</spring
+```
+java.version (17)
+- Spring Boot 3.x requires Java 17+. Setting this ensures your code compiles and runs with the right language level and APIs (records, sealed classes, pattern matching improvements, etc.).
+- spring.boot.version (3.2.0)
+Centralizes your Spring Boot version. You reference it in parent and can bump it in one place later.
+
+  - Parent (BOM / dependency management)
+
+ ```XML
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>${spring.boot.version}</version>
+</parent>
+```
+The Spring Boot Starter Parent acts like a Bill of Materials (BOM) and provides:
+
+Managed, compatible versions of Spring and third‑party libraries (so you usually don’t specify versions for starters).
+Sensible plugin defaults and reproducible build settings.
+Standard Maven configuration (encoding, resource filtering, plugin versions).
+
+Why: It dramatically reduces boilerplate and prevents version conflicts.
+
+ - Dependencies
+   1) Web stack
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+```
+What it brings (transitively):
+Spring MVC for building REST endpoints (@RestController, @GetMapping, @PostMapping, etc.).
+Jackson for JSON serialization/deserialization (turning request/response bodies into Java objects and back).
+Embedded Tomcat as the default HTTP server (so you can run a fat JAR with java -jar and get an HTTP server without installing anything).
+Why: Your service exposes a REST API to compute speed; this starter gives you the MVC framework, JSON, and an embedded server out of the box.
+
+  2) Bean validation (Jakarta Validation)
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+
+
+```
+What it brings:
+Jakarta Bean Validation implementation (Hibernate Validator) and APIs.
+Integration with Spring MVC so your request DTOs annotated with constraints are automatically validated.
+Why: Your endpoint likely receives input like { "distance": 42.0, "time": 0.0 }.
+Validation lets you fail fast with meaningful errors:
 ---
+  3) Test stack
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+</dependency>
+
+```
+What it brings:
+
+JUnit Jupiter (JUnit 5) for writing tests.
+Spring Test for bootstrapping the Spring context in tests (@SpringBootTest, @WebMvcTest, etc.).
+MockMvc for testing MVC controllers without running the server.
+AssertJ, Hamcrest, Mockito, and JSON test helpers.
+
+   - Build plugins
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
+```
+Spring Boot Maven Plugin:
+Repackages the app into an executable fat JAR with all dependencies (spring-boot:repackage), so you can run:
+for example to:
+```xml
+mvn clean package
+java -jar target/speed-api-1.0.0.jar
+```
+         - Adds a proper main class manifest entry automatically.
+         - Supports build-time layered jars for Docker efficiency (faster rebuilds).
+         - Integrates with Spring Boot’s run goal for hot reload during development:
+```xml
+
+mvn spring-boot:run
+
+```
+
+
 
 # 📄 `src/main/java/com/example/speedapi/SpeedApiApplication.java`
+
+
 
 ```java
 package com.example.speedapi;
@@ -95,6 +202,9 @@ public class SpeedApiApplication {
     }
 }
 ```
+- SpeedApiApplication is the entry point of your Spring Boot application.
+- It’s the class whose main method gets executed when you run the JAR (e.g., java -jar speed-api-1.0.0.jar) or when you run the app from your IDE.
+
 
 ---
 
@@ -119,7 +229,9 @@ public class SpeedController {
     }
 }
 ```
-
+### What this class is
+  - SpeedController is a Spring REST controller that exposes an HTTP endpoint to compute speed from query parameters.
+  - It is stateless (no fields), so it’s thread-safe under typical Spring usage and can be a singleton bean.
 ---
 
 # 📄 `src/main/resources/application.properties`
@@ -128,6 +240,10 @@ public class SpeedController {
 # Uncomment to change the port:
 # server.port=9090
 ```
+server.port=9090
+
+ - This property tells Spring Boot which port the embedded web server should listen on.
+ - By default, Spring Boot starts on port 8080.
 
 ---
 
@@ -146,7 +262,13 @@ COPY target/speed-api-1.0.0.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
+This is a multi-stage Docker build:
 
+ - Stage 1 (build): Uses a full JDK and Maven to compile and package the app into a runnable JAR.
+ - Stage 2 (runtime): Uses a slimmer JRE-only image to run the already-built JAR.
+
+
+Why: Keeps the final image small and secure (no compilers, no Maven, fewer tools). You ship only what’s needed to run.
 ---
 
 # 📄 `deployment.yaml`
@@ -187,6 +309,12 @@ spec:
       targetPort: 8080
       nodePort: 30080
 ```
+It defines two resources separated by ---:
+
+A Deployment named speed-api (manages Pods and rolling updates).
+A Service named speed-api-service of type NodePort (exposes the Pod on a stable port from the node).
+
+
 ## How to run the application
 
 
