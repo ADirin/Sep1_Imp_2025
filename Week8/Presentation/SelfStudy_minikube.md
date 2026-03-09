@@ -11,6 +11,7 @@ Kubernetes (often abbreviated as K8s) is an open-source platform used to automat
 - Self-healing – restarts containers if they crash
 - Load balancing – distributes traffic between containers
 - Rolling updates – updates applications without downtime
+
 Kubernetes was originally developed by Google and is now maintained by the Cloud Native Computing Foundation.
 In modern cloud-native development, Kubernetes is commonly used together with container technologies like Docker to deploy and manage microservices and distributed applications.
 
