@@ -48,7 +48,7 @@ The diagram illustrates the **end-to-end deployment and interaction flow** of th
    - Tag: `<KubernetesCluster>` `<SpeedAPI>`
 
 ```xml
-PS C:\Users\amirdi\OneDrive - Metropolia Ammattikorkeakoulu Oy\Documents\Winter2026\LectDemo\week8\lecttest\FInalCheck> kubectl get svc                 
+PS C:\\...\Documents\Winter2026\LectDemo\week8\lecttest\FInalCheck> kubectl get svc                 
 NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 calculator-service   NodePort    10.107.209.82   <none>        80:30007/TCP     3d11h
 kubernetes           ClusterIP   10.96.0.1       <none>        443/TCP          3d11h
@@ -56,6 +56,14 @@ mariadb-service      ClusterIP   10.104.6.153    <none>        3306/TCP         
  **speed-api-service    NodePort    10.102.27.209   <none>        9090:30080/TCP   15s**
 
 ```
+
+```xml
+c:\....\Documents\Winter2026\LectDemo\week8\lecttest\FInalCheck> kubectl get pods -w
+speed-app-8fbc86cfc-q2g78                1/1     Running             137 (5m10s ago)   13h
+speed-gui-d898489f6-xj699                1/1     Running             134 (5m5s ago)    14h
+
+```
+
 
 5. **User sends a request**  
    - Action: A user interacts with the API by sending an HTTP request to the Kubernetes service endpoint.  
