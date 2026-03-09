@@ -416,12 +416,15 @@ java -jar target/speed-api-1.0.0.jar
 Open:  
 http://localhost:9090/speed?distance=100&time=2
 
+---------------------------------------------------------------------------------------
 
 "**_Improved version of the example_**" https://github.com/ADirin/kubernetes_selfstudy_improved.git
 
+---------------------------------------------------------------------------------------
 
 
-### Change port:
+## Most usefull comments for docker and kubernetes
+### To Change port:
 Edit `src/main/resources/application.properties`:
 
 ```
