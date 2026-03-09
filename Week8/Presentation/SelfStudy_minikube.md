@@ -418,7 +418,7 @@ http://localhost:9090/speed?distance=100&time=2
 
 ---------------------------------------------------------------------------------------
 
-"**_Improved version of the example_**" https://github.com/ADirin/kubernetes_selfstudy_improved.git
+🎉 "**_Improved version of the example_**" https://github.com/ADirin/kubernetes_selfstudy_improved.git
 
 ---------------------------------------------------------------------------------------
 
