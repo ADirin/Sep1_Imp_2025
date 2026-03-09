@@ -368,7 +368,7 @@ java -jar target/speed-api-1.0.0.jar
 ```
 
 Open:  
-http://localhost:8080/speed?distance=100&time=2
+http://localhost:9090/speed?distance=100&time=2
 
 ### Change port:
 Edit `src/main/resources/application.properties`:
