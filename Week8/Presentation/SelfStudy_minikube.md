@@ -27,7 +27,33 @@ Overall, this project serves as a practical example of:
 
 ![Sample implementation](/Images/minikube.png)
 
+The diagram illustrates the **end-to-end deployment and interaction flow** of the **Speed API**.
 
+## Sequence of Steps
+
+1. **Developer builds the application**  
+   - Action: Using the `Dockerfile` to create a container-ready application.  
+   - Tag: `<Developer>`
+
+2. **Docker builds the container image and pushes it**  
+   - Action: Image is pushed to **Docker Hub** for storage and later use.  
+   - Tag: `<Docker>` `<DockerHub>`
+
+3. **Kubernetes deploys the application**  
+   - Action: Kubernetes pulls the container image from Docker Hub and deploys it using `deployment.yaml`.  
+   - Tag: `<KubernetesCluster>` `<DockerHub>`
+
+4. **Service starts in Kubernetes**  
+   - Action: The Speed API service starts running in the cluster and becomes available for requests.  
+   - Tag: `<KubernetesCluster>` `<SpeedAPI>`
+
+5. **User sends a request**  
+   - Action: A user interacts with the API by sending an HTTP request to the Kubernetes service endpoint.  
+   - Tag: `<User>` `<SpeedAPI>`
+
+6. **API responds with data**  
+   - Action: The Speed API processes the request and returns the response to the user.  
+   - Tag: `<SpeedAPI>` `<User>`
 It is intended for learning and demonstration purposes, illustrating a basic workflow for developing, containerizing, and deploying cloud-native applications.
 Create new project similar as the figure below:
 
