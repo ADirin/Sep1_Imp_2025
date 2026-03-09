@@ -23,6 +23,7 @@ Overall, this project serves as a practical example of:
 - Building a Spring Boot REST API
 - Packaging applications with Docker containers
 - Deploying and orchestrating services using Kubernetes
+
 It is intended for learning and demonstration purposes, illustrating a basic workflow for developing, containerizing, and deploying cloud-native applications.
 Create new project similar as the figure below:
 
