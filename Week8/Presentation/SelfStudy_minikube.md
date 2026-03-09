@@ -154,13 +154,13 @@ Why: Your service exposes a REST API to compute speed; this starter gives you th
     <artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 
-
 ```
 What it brings:
 Jakarta Bean Validation implementation (Hibernate Validator) and APIs.
 Integration with Spring MVC so your request DTOs annotated with constraints are automatically validated.
 Why: Your endpoint likely receives input like { "distance": 42.0, "time": 0.0 }.
 Validation lets you fail fast with meaningful errors:
+
 ---
   3) Test stack
 ```xml
