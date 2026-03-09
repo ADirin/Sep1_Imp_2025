@@ -416,8 +416,8 @@ spec:
     app: speed-api
   ports:
     - name: http
-      port: 8080
-      targetPort: 8080
+      port: 9090
+      targetPort: 9090
       nodePort: 30080
 ```
 It defines two resources separated by ---:
