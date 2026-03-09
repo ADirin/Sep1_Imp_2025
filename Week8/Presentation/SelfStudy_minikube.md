@@ -18,11 +18,15 @@ In modern cloud-native development, Kubernetes is commonly used together with co
 ## Project Description
 
 The Speed API project (The lecture demo during the course) is a simple Java-based RESTful web service built with Spring Boot. The purpose of this project is to demonstrate modern containerized application development and deployment using Docker and Kubernetes. 
-The application exposes a basic API endpoint implemented in the SpeedController, allowing users to interact with the service through HTTP requests. The project includes a Dockerfile to containerize the Spring Boot application, enabling it to run consistently across different environments. In addition, the deployment.yaml file provides a Kubernetes deployment configuration, showing how the containerized application can be deployed, managed, and scaled within a Kubernetes cluster.
+The application exposes a basic API endpoint implemented in the SpeedController, allowing users to interact with the service through HTTP requests. The project includes a Dockerfile to containerize the Spring Boot application, enabling it to run consistently across different environments. 
+In addition, the deployment.yaml file provides a Kubernetes deployment configuration, showing how the containerized application can be deployed, managed, and scaled within a Kubernetes cluster.
 Overall, this project serves as a practical example of:
 - Building a Spring Boot REST API
 - Packaging applications with Docker containers
 - Deploying and orchestrating services using Kubernetes
+
+[Sample implementation](/Images/minikube.png)
+
 
 It is intended for learning and demonstration purposes, illustrating a basic workflow for developing, containerizing, and deploying cloud-native applications.
 Create new project similar as the figure below:
