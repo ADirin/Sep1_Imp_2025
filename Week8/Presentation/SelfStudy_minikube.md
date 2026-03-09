@@ -439,6 +439,8 @@ A Service named speed-api-service of type NodePort (exposes the Pod on a stable 
 
 # 📄 `README.md`
 
+**Note** Make sure your docker and the minikube is running (first run the docker desktop and then minikube start)
+
 ```markdown
 # Speed API
 
@@ -452,9 +454,10 @@ A minimal Spring Boot REST API that calculates speed = distance / time.
 
 ```bash
 mvn clean package
-mvn spring-boot:run
-# or
 java -jar target/speed-api-1.0.0.jar
+
+mvn spring-boot:run
+
 ```
 
 Open:  
