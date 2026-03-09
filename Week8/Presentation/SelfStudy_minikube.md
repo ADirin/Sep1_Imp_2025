@@ -25,7 +25,7 @@ Overall, this project serves as a practical example of:
 - Packaging applications with Docker containers
 - Deploying and orchestrating services using Kubernetes
 
-[Sample implementation](/Images/minikube.png)
+![Sample implementation](/Images/minikube.png)
 
 
 It is intended for learning and demonstration purposes, illustrating a basic workflow for developing, containerizing, and deploying cloud-native applications.
