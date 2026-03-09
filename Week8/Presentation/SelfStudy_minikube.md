@@ -50,7 +50,49 @@ speed-api/
 ```
 Why we do in this project demonstrated in the following sequence diagram
 
-![Sequence Diagram](/Images/project.png)
+```mermaid
+%%{init: {
+  "theme": "dark",
+  "themeCSS": "
+    .messageLine0, .messageLine1, .messageLine2, .messageLine3, 
+    .messageLine4, .messageLine5, .messageLine6, .messageLine7 {
+        stroke: #ffffff !important;
+    }
+    .messageText {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+    }
+    .actor {
+        fill: #000000 !important;
+        stroke: #ffffff !important;
+    }
+    .actor text {
+        fill: #ffffff !important;
+    }
+  "
+}}%%
+
+sequenceDiagram
+    autonumber
+    participant U as User
+    participant C as SpeedController
+    participant H as History List
+
+    U->>C: GET /speed?distance=d&time=t&unit=u
+    C->>C: Validate input (distance >=0, time>0)
+    C->>C: Calculate speed\nConvert to unit (m/s or km/h)
+    C->>C: Select random fun fact
+    C->>H: Append calculation entry\n(timestamp, params, speed)
+    H-->>C: Confirmation
+    C-->>U: Return formatted result\n(speed + fun fact)
+
+    U->>C: GET /history
+    C->>H: Fetch all entries
+    H-->>C: Return list
+    C-->>U: Return JSON history
+
+
+```
 
 
 ---
