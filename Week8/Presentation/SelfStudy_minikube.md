@@ -68,8 +68,13 @@ speed-gui-d898489f6-xj699                1/1     Running             134 (5m5s a
 5. **User sends a request**  
    - Action: A user interacts with the API by sending an HTTP request to the Kubernetes service endpoint.  
    - Tag: `<User>` `<SpeedAPI>`
+  
+   ```xml
+   [http://localhost:9090/speed](http://localhost:9090/speed?distance=100&time=2)
 
-6. **API responds with data**  
+   ```
+
+7. **API responds with data**  
    - Action: The Speed API processes the request and returns the response to the user.  
    - Tag: `<SpeedAPI>` `<User>`
 It is intended for learning and demonstration purposes, illustrating a basic workflow for developing, containerizing, and deploying cloud-native applications.
