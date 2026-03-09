@@ -1,6 +1,25 @@
 github repo of the [following example in windows environment] https://github.com/ADirin/week8_minikube_example.git 
 
-# Minikube demonstration
+# Kubernetes demonstration
+
+Kubernetes (often abbreviated as K8s) is an open-source platform used to automate the deployment, scaling, and management of containerized applications. It helps run applications packaged in containers (such as those created with Docker) across a cluster of machines in a reliable and efficient way. In simple terms, Kubernetes acts as a container orchestrator. It manages where containers run, keeps them running, and automatically handles tasks such as restarting failed containers, balancing traffic, and scaling applications when demand increases.
+
+Key functions of Kubernetes
+
+- Container orchestration – manages multiple containers across servers
+
+- Automatic scaling – increases or decreases the number of running containers based on demand
+
+- Self-healing – restarts containers if they crash
+
+- Load balancing – distributes traffic between containers
+
+- Rolling updates – updates applications without downtime
+
+Kubernetes was originally developed by Google and is now maintained by the Cloud Native Computing Foundation.
+
+In modern cloud-native development, Kubernetes is commonly used together with container technologies like Docker to deploy and manage microservices and distributed applications.
+
 ## Project Description
 
 The Speed API project is a simple Java-based RESTful web service built with Spring Boot. The purpose of this project is to demonstrate modern containerized application development and deployment using Docker and Kubernetes. 
