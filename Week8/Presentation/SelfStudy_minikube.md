@@ -48,6 +48,10 @@ speed-api/
 │        └─ application.properties
 └─ README.md
 ```
+Why we do in this project demonstrated in the following sequence diagram
+
+![Sequence Diagram](/Images/project.png)
+
 
 ---
 
