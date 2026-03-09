@@ -65,7 +65,9 @@ The diagram illustrates the **end-to-end deployment and interaction flow** of th
        **speed-api-service    NodePort    10.102.27.209   <none>        9090:30080/TCP   15s**
 
     ```
-to check what service is running
+    
+- to check what service is running
+
    ```xml
     c:\....\Documents\Winter2026\LectDemo\week8\lecttest\FInalCheck> kubectl get pods -w
     speed-app-8fbc86cfc-q2g78                1/1     Running             137 (5m10s ago)   13h
