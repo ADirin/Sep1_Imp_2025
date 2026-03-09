@@ -489,14 +489,14 @@ http://localhost:9090/speed?distance=100&time=2
 
     1. Pull from Docker Hub
          ```xml
-               docker pull amirdirin/speed-api:1.0
+               docker pull amirdirin/speed1-api:1.0
          ```
 
     2. Run the container
      Since your Spring Boot app uses port 9090, run: 
 
           ```xml
-            docker run -p 9090:9090 amirdirin/speed-api:1.0
+            docker run -p 9090:9090 amirdirin/speed1-api:1.0
           ```
       4.  Test in browser
 
