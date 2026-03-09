@@ -155,7 +155,7 @@ sequenceDiagram
 
 ---
 
-# 📄 `pom.xml`
+## 📄 `pom.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -317,7 +317,7 @@ mvn spring-boot:run
 
 
 
-# 📄 `src/main/java/com/example/speedapi/SpeedApiApplication.java`
+## 📄 `src/main/java/com/example/speedapi/SpeedApiApplication.java`
 
 
 
@@ -341,7 +341,7 @@ public class SpeedApiApplication {
 
 ---
 
-# 📄 `src/main/java/com/example/speedapi/SpeedController.java`
+## 📄 `src/main/java/com/example/speedapi/SpeedController.java`
 
 ```java
 package com.example.speedapi;
@@ -367,7 +367,7 @@ public class SpeedController {
   - It is stateless (no fields), so it’s thread-safe under typical Spring usage and can be a singleton bean.
 ---
 
-# 📄 `src/main/resources/application.properties`
+## 📄 `src/main/resources/application.properties`
 
 ```properties
 # Uncomment to change the port:
@@ -380,7 +380,7 @@ server.port=9090
 
 ---
 
-# 📄 `Dockerfile`
+## 📄 `Dockerfile`
 
 ```dockerfile
 FROM eclipse-temurin:17-jdk-alpine AS build
@@ -404,7 +404,7 @@ This is a multi-stage Docker build:
 Why: Keeps the final image small and secure (no compilers, no Maven, fewer tools). You ship only what’s needed to run.
 ---
 
-# 📄 `deployment.yaml`
+## 📄 `deployment.yaml`
 
 ```yaml
 apiVersion: apps/v1
