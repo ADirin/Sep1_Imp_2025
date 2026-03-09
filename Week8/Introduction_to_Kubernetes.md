@@ -511,7 +511,56 @@ http://localhost:9090/speed?distance=100&time=2
 
 ---------------------------------------------------------------------------------------
 
+## STep 1- Find the process using port 9090
 
+Run this in PowerShell:
+
+```xml
+
+netstat -ano | findstr :9090
+
+```
+Example output:
+
+```xml
+PS C:\> netstat -ano | findstr :9090
+  TCP    0.0.0.0:9090           0.0.0.0:0              LISTENING       30608
+  TCP    [::]:9090              [::]:0                 LISTENING       30608
+  TCP    [::1]:9090             [::]:0                 LISTENING       33224
+
+
+```
+
+The last number is the PID (Process ID).
+
+Example:
+
+```xml
+
+PID = 33224
+
+```
+## Step 2- Stop the process
+RUN:
+
+```xml
+
+taskkill /PID 33224 /F
+
+```
+Explanation:
+
+  - /PID → process ID
+  - /F → force stop
+
+## Step 3- Run your Spring Boot application again
+
+```xml
+mvn spring-boot:run
+
+```
+
+-------------------------------------------------------------------------------------
 ## Most usefull comments for docker and kubernetes
 ### To Change port:
 Edit `src/main/resources/application.properties`:
