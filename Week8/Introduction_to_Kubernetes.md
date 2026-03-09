@@ -46,9 +46,9 @@ The diagram illustrates the **end-to-end deployment and interaction flow** of th
      ```xml
       PS C:\> docker tag speed-api:1.0 amirdirin/speed-api:1.0
       PS C:\> docker images
-                                                                                                 i Info →   U  In Use
-      IMAGE                                                          ID             DISK USAGE   CONTENT SIZE   EXTRA
-      amirdi/speed-api:1.0                                           35e8bdb76e4b        206MB             0B
+                                                                                      i Info →   U  In Use
+      IMAGE                        ID             DISK USAGE   CONTENT SIZE   EXTRA
+      amirdi/speed-api:1.0     35e8bdb76e4b       206MB                0B
 
      ```
 
