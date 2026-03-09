@@ -42,6 +42,15 @@ The diagram illustrates the **end-to-end deployment and interaction flow** of th
 3. **Kubernetes deploys the application**  
    - Action: Kubernetes pulls the container image from Docker Hub and deploys it using `deployment.yaml`.  
    - Tag: `<KubernetesCluster>` `<DockerHub>`
+  
+     ```xml
+      PS C:\> docker tag speed-api:1.0 amirdirin/speed-api:1.0
+      PS C:\> docker images
+                                                                                                 i Info →   U  In Use
+      IMAGE                                                          ID             DISK USAGE   CONTENT SIZE   EXTRA
+      amirdi/speed-api:1.0                                           35e8bdb76e4b        206MB             0B
+
+     ```
 
 4. **Service starts in Kubernetes**  
    - Action: The Speed API service starts running in the cluster and becomes available for requests.  
