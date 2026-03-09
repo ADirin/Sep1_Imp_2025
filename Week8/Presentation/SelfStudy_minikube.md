@@ -486,22 +486,26 @@ http://localhost:9090/speed?distance=100&time=2
 🎉 "**_Improved version of the example_**" https://github.com/ADirin/kubernetes_selfstudy_improved.git
 
   - If you only want to try the app which is in the hub follow the following steps
-        1. Pull from Docker Hub
+
+    1. Pull from Docker Hub
          ```xml
                docker pull amirdirin/speed-api:1.0
          ```
-       2. Run the container
-         Since your Spring Boot app uses port 9090, run: 
+
+    2. Run the container
+     Since your Spring Boot app uses port 9090, run: 
+
           ```xml
             docker run -p 9090:9090 amirdirin/speed-api:1.0
-
           ```
-          ```xml
+      4.  Test in browser
+
+       ```xml
          http://localhost:9090/hello
          http://localhost:9090/speed
          http://localhost:9090/speed?distance=200&time=5
          http://localhost:9090/history
-          ```
+       ```
              
 
 ---------------------------------------------------------------------------------------
