@@ -381,7 +381,7 @@ server.port=9090
 
 ---
 
-## 📄 `Dockerfile`
+## 📄 ` Multistage Dockerfile`
 
 ```dockerfile
 FROM eclipse-temurin:17-jdk-alpine AS build
@@ -403,6 +403,23 @@ This is a multi-stage Docker build:
 
 
 Why: Keeps the final image small and secure (no compilers, no Maven, fewer tools). You ship only what’s needed to run.
+
+**Note:** You may write the docker file only in one stage as we have practiced during this course.However you have to use either one not both
+
+```dockerfile
+
+FROM eclipse-temurin:17-jdk-alpine
+
+WORKDIR /app
+COPY . .
+
+RUN ./mvnw -DskipTests package || mvn -DskipTests package
+
+EXPOSE 9090
+ENTRYPOINT ["java", "-jar", "target/speed-api-1.0.0.jar"]
+
+```
+
 ---
 
 ## 📄 `deployment.yaml`
