@@ -393,7 +393,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY target/speed-api-1.0.0.jar app.jar
 # modify the port if need 8080 is reserved for jenkins
-EXPOSE 8080
+EXPOSE 9090
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 This is a multi-stage Docker build:
