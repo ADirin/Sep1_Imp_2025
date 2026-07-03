@@ -20,13 +20,12 @@ A project implements a complete DevOps pipeline for a JavaFX FXML-based similar 
 
 
 ## Technology Stack
-##" 2.1 Core Technologies
-Technology	Version	Purpose	Justification
-Java	XXX LTS	Application Language	LTS version with long-term support
-JavaFX	17.0.2	UI Framework	Modern GUI framework with FXML support
-FXML	-	UI Layout	XML-based UI definition for separation of concerns
-MariaDB	10.11	Database	Open-source relational database with high performance
-Maven	3.8.6	Build Tool	Dependency management and build automation
+### 2.1 Core Technologies
+#### Technology	Version	Purpose	Justification
+1. JavaFX	xxx 	UI Framework	Modern GUI framework with FXML support
+2. FXML	-	UI Layout	XML-based UI definition for separation of concerns
+3. MariaDB	10.11	Database	Open-source relational database with high performance
+4. Maven	3.8.6	Build Tool	Dependency management and build automation
 
 
 
