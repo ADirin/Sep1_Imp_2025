@@ -1,3 +1,33 @@
+# Automn 2026 Implementation (Recommended)
+
+## JavaFX FXML Account Creation Application - DevOps Project
+
+Project Duration: 8 Weeks (4 Sprints × 2 Weeks)
+Technology Stack: JavaFX, FXML, MariaDB, JUnit, JaCoCo, Jenkins, Docker, Xming
+Team Size: 3-4 Members
+
+
+### Project Overview
+A project implements a complete DevOps pipeline for a JavaFX FXML-based similar as the [account creation application] (https://github.com/ADirin/Project_Topic1_For_All_2026/blob/main/project_description/p1_Account%20manager.md). The project is structured across four two-week sprints, covering database implementation, unit testing with code coverage, CI/CD pipeline configuration using Jenkins, and containerization with Docker and Xming for GUI display.
+
+### Objectives
+#### Objective	Description
+- Sprint 1	Project and tools setup, Develop JavaFX FXML application with MariaDB integration
+- Sprint 2	Implement the UI with comprehensive unit testing with 80%+ code coverage
+- Sprint 3	Configure Jenkins CI/CD pipeline with automated deployment
+- Sprint 4	Containerize application using Docker and enable GUI via Xming
+
+
+## Technology Stack
+##" 2.1 Core Technologies
+Technology	Version	Purpose	Justification
+Java	XXX LTS	Application Language	LTS version with long-term support
+JavaFX	17.0.2	UI Framework	Modern GUI framework with FXML support
+FXML	-	UI Layout	XML-based UI definition for separation of concerns
+MariaDB	10.11	Database	Open-source relational database with high performance
+Maven	3.8.6	Build Tool	Dependency management and build automation
+
+
 # Java-Based Three-Tier Projects for Students and Teachers
 
 ## Project Instructions
