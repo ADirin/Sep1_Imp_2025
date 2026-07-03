@@ -1,3 +1,4 @@
+
 # Automn 2026 Implementation (Recommended)
 
 ## JavaFX FXML Account Creation Application - DevOps Project
@@ -26,6 +27,10 @@ JavaFX	17.0.2	UI Framework	Modern GUI framework with FXML support
 FXML	-	UI Layout	XML-based UI definition for separation of concerns
 MariaDB	10.11	Database	Open-source relational database with high performance
 Maven	3.8.6	Build Tool	Dependency management and build automation
+
+
+
+
 
 
 # Java-Based Three-Tier Projects for Students and Teachers
