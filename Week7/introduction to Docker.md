@@ -352,12 +352,12 @@ docker run -it your-app-name
 
 Running the Image remotely from Hub.docker.com:
 
-> ![Play with docker](https://labs.play-with-docker.com/p/crrhq1qim2rg00dh05v0)
+> ![Run the image from hub.docker](https://labs.iximiuz.com/playgrounds/docker/6a8583157ac15b5dbef85657)
 
 
 Run the Images from HUB remotely
 
- 1. open the following link [Play docker](https://labs.play-with-docker.com/)
+ 1. open the following link [Play image](https://labs.iximiuz.com/playgrounds/docker/6a8583157ac15b5dbef85657)
  2. puul the image you want to test from hub.docker.com (your image repo) with the following command:
     - docker pull yourusername/imagename:ver
     - for example:
