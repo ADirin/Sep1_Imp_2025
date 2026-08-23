@@ -767,4 +767,31 @@ You'll see the calculator form. This is the fastest way to sanity-check code cha
 
 ---
 
-*End of guide.*
+# Minikube comments:
+1. Get already running services:
+```
+   -- kubectl get svc
+   -- minikube service <calculator-service-name>
+
+```
+2. Accessing by forwarding ports
+```
+  -- kubectl get svc
+  -- kubectl port-forward svc/<calculator-service-name> 8080:80
+```   
+3. Usefull  Pods comments
+```
+    -- kubectl get pods    
+    -- kubectl describe pod <problem-pod>   # check Events section
+    -- kubectl logs <problem-pod>
+
+```  
+4. Applying development
+
+```
+    -- kubectl apply -f <file>.yaml     # create or update from YAML
+    -- kubectl delete -f <file>.yaml    # delete what's defined in YAML
+    -- kubectl rollout restart deployment <name>   # force re-pull/restart pods
+    -- kubectl rollout status deployment <name>    # watch rollout progress
+    -- kubectl rollout undo deployment <name>      # revert last rollout
+```
