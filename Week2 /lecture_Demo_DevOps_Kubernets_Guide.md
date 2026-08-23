@@ -22,7 +22,7 @@
 10. [Part 9: Deploy to Kubernetes with minikube](#10-part-9-deploy-to-kubernetes-with-minikube)
 11. [Part 10: Run the App on localhost (No Kubernetes)](#11-part-10-run-the-app-on-localhost-no-kubernetes)
 12. [Troubleshooting Cheat Sheet](#12-troubleshooting-cheat-sheet)
-13. [Minikube cheatsheet] (#13-Minikube-comments)
+13. [Minikube cheatsheet](#13-minikube-comments)
 
 ---
 
