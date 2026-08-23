@@ -2,6 +2,10 @@
 
 **A student guide covering: console app design, unit testing, Maven, Jenkins CI/CD, code coverage, Docker, Docker Hub, running containers in a browser sandbox, and Kubernetes deployment with minikube.**
 
+[lecture demo_2026] https://github.com/ADirin/calculator_2026f.git
+<img width="568" height="53" alt="image" src="https://github.com/user-attachments/assets/67d0b032-03f7-43aa-8887-d51f25972acb" />
+
+
 ---
 
 ## Table of Contents
