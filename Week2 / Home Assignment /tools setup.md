@@ -1,6 +1,6 @@
 Below is a basic setup guideline for installing Git, Jenkins, Docker, and Kubernetes on a Windows operating system. Please note that the steps may vary slightly based on the specific versions available at the time of installation, so it's advisable to check for the latest versions.
 
-![DevOpsTools](/Images/DevOpsTools.png)
+
 
 ## Install JDK
 
@@ -14,9 +14,15 @@ C:\> java --version
 
 - If you get a "java is not recognized" error, search for "JDK download" on Google and download it to your local machine's Program Files. After installation, copy the path: `C:\Program Files\Java\jdk-21\bin`
 1. Open the Windows search bar and type "Edit the system environment variables"
+![Edit System](/Images/EditSystem.jpg)
+
 2. In the System Properties window, click "Environment Variables"
-3. Under System Variables, find "Path", click "Edit", then click "New"
-4. Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
+
+![Edit System](/Images/path.jpg)
+4. Under System Variables, find "Path", click "Edit", then click "New"
+
+![Edit System](/Images/new_path.jpg)
+5. Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
 
 
 
