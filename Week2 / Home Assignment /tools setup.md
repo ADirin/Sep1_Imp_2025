@@ -28,7 +28,6 @@ C:\> java --version
 
 
 
-
 ### 1. Install Git:
    - **Download Git:**
 ![GIT](/Images/git-github.gif)
@@ -44,7 +43,6 @@ C:\> java --version
      - if you receive error follow step 1-4 similar as JDK installation
 
 ### 2. Install Docker:
-
 ![Docker](/Images/docker_3.gif)
 
    - **Download Docker Desktop:**
