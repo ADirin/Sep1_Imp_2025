@@ -614,6 +614,8 @@ mvn clean package
 
 ## 10. Part 9: Deploy to Kubernetes with minikube
 
+![PODS](/Images/yamls.jpg)
+
 ### 10.1 Start minikube
 
 ```bash
