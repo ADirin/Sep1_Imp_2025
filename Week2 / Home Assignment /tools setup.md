@@ -2,6 +2,25 @@ Below is a basic setup guideline for installing Git, Jenkins, Docker, and Kubern
 
 ![DevOpsTools](/Images/DevOpsTools.png)
 
+## Install JDK
+
+Make sure you have installed JDK, either version 17, 21, or 25 — for example, version 21 can be downloaded here: [JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html).
+
+You can check whether Java is already installed on your machine via the console:
+
+​```
+C:\> java --version
+​```
+
+- If you get a "java is not recognized" error, search for "JDK download" on Google and download it to your local machine's Program Files. After installation, copy the path: `C:\Program Files\Java\jdk-21\bin`
+- Open the Windows search bar and type "Edit the system environment variables"
+- In the System Properties window, click "Environment Variables"
+- Under System Variables, find "Path", click "Edit", then click "New"
+- Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
+
+
+
+
 ### 1. Install Git:
    - **Download Git:**
 ![GIT](/Images/git-github.gif)
