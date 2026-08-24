@@ -616,6 +616,8 @@ mvn clean package
 
 ![PODS](/Images/yamls.jpg)
 
+The Deployment (teal box) owns and manages the pods — restarting them, keeping the replica count steady. Each pod carries the label app=calculator. The Service (coral box) doesn't know about the Deployment at all — it only knows to look for anything with a matching label, which is why label consistency between the two is critical. Once it finds the pods, it exposes a stable port (80) that forwards to each pod's actual container port (8087), giving you one consistent address to reach even as individual pods get replaced.
+
 ### 10.1 Start minikube
 
 ```bash
