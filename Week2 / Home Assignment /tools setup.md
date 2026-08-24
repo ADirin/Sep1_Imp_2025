@@ -13,10 +13,10 @@ C:\> java --version
 ​```
 
 - If you get a "java is not recognized" error, search for "JDK download" on Google and download it to your local machine's Program Files. After installation, copy the path: `C:\Program Files\Java\jdk-21\bin`
-- Open the Windows search bar and type "Edit the system environment variables"
-- In the System Properties window, click "Environment Variables"
-- Under System Variables, find "Path", click "Edit", then click "New"
-- Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
+1. Open the Windows search bar and type "Edit the system environment variables"
+2. In the System Properties window, click "Environment Variables"
+3. Under System Variables, find "Path", click "Edit", then click "New"
+4. Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
 
 
 
@@ -33,6 +33,7 @@ C:\> java --version
      - Choose the appropriate options (e.g., adjusting the PATH environment) during installation.
    - **Verification:**
      - Open a command prompt and type `git --version` to ensure Git is installed and accessible.
+     - if you receive error follow step 1-4 similar as JDK installation
 
 ### 2. Install Docker:
 
