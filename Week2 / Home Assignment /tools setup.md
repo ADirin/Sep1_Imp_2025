@@ -19,10 +19,12 @@ C:\> java --version
 2. In the System Properties window, click "Environment Variables"
 
 ![Edit System](/Images/path.jpg)
-4. Under System Variables, find "Path", click "Edit", then click "New"
+
+3. Under System Variables, find "Path", click "Edit", then click "New"
 
 ![Edit System](/Images/new_path.jpg)
-5. Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
+
+4. Paste the path `C:\Program Files\Java\jdk-21\bin` into the new field, then click "OK"
 
 
 
