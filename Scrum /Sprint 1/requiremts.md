@@ -74,11 +74,6 @@ Prepare a clear **Product Vision document** (maximum **one A4 page**) covering:
 As a [user type], I want [functionality] so that [benefit].
 ````
 
-### 8. Prepare Topic Presentation (3 Points)
-- Prepare a 25-minute presentation based on the shared classroom presentation topics.
-- The presentation schedule will be announced one week in advance.
-- At the end of the presentation, prepare two discussion questions for classmates to answer.
-
 ### Optional Early Implementation
 If time permits:
 1. Design the application UI using Figma and present it during the Sprint 1 review.
