@@ -1,5 +1,5 @@
 
-# NOTE: Optional Assignmengt for all (**Note** this is *NOT* a lecture assignment)
+# NOTE: This is *NOT* a lecture assignment (**Optional**)
 
 ### Lecture Assignment: Weekly Sports Time Tracker Application
 
