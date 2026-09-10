@@ -1,9 +1,9 @@
 
-# NOTE: Optional Assignmengt for all (**Note** this is not a lecture assignment)
+# NOTE: Optional Assignmengt for all (**Note** this is **not** a lecture assignment)
 
-# Lecture Assignment: Weekly Sports Time Tracker Application
+### Lecture Assignment: Weekly Sports Time Tracker Application
 
-## Objective
+### Objective
 This assignment aims to help students develop a Java application that tracks the time spent on sports activities during the week. Students will also practice version control with GitHub, continuous integration and deployment using Jenkins, containerization with Docker, and running the application in a Virtual Machine / Linux environment or  [lab-play_webapp](https://labs.play-with-docker.com/).
 
 **How to do:**
