@@ -1,6 +1,6 @@
 ## Software Development Methodologies Flowchart Overview
 
-[Sprint1 Implementation](Images/Sprints1-4.jpg)
+![Sprint1 Implementation](Images\Sprints1-4.jpg)
 
 
 This flowchart visualizes the main processes and cycles of three software development methodologies: **SDLC**, **Agile**, and **DevOps**.  
