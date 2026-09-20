@@ -281,9 +281,9 @@ Even without **Blue Ocean**, the regular Jenkins UI should show a **Stages** tab
    - Save the job and click "Build Now" to run the pipeline.
 
 
-## The Image generation process
+## 4. The Image generation process
 
-
+![Deployment Process](/Images/dep.png)
 
 
 
