@@ -78,4 +78,5 @@ pipeline {
 
 1. GitHub repository link
 2. Screenshot of a successfully executed pipeline (e.g., Ocean Blue view or stage view). See the sample output from the class demo (`SVG_301x.java`).
-3. Screenshots showing the successful execution of the image.
+3. Submit the screenshots of your hub.docker.com
+4. Screenshots showing the successful execution of the image.
