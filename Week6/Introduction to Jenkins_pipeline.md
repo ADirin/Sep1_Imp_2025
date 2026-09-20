@@ -286,6 +286,7 @@ Even without **Blue Ocean**, the regular Jenkins UI should show a **Stages** tab
 
 ### Sequence Diagram
 
+![Sequence Diagram](/Images/Seq2.png)
 
 
 
