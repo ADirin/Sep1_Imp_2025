@@ -286,21 +286,6 @@ Even without **Blue Ocean**, the regular Jenkins UI should show a **Stages** tab
 
 ### Sequence Diagram
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Jenkins
-    participant GitHub
-
-    User->>Jenkins: Create Pipeline Job
-    Jenkins->>GitHub: Pull Code and Jenkinsfile
-    Jenkins->>Jenkins: Run Pipeline Stages
-    Jenkins->>Jenkins: Build, Test, Code Coverage, Publish Results
-    Jenkins->>User: Display Results
-
-
-```
-
 
 
 
