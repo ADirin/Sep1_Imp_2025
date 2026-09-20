@@ -159,21 +159,7 @@ Even without **Blue Ocean**, the regular Jenkins UI should show a **Stages** tab
 
 
 ### Sequence Diagram
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Jenkins
-    participant GitHub
-
-    User->>Jenkins: Create Pipeline Job
-    Jenkins->>GitHub: Pull Jenkinsfile
-    Jenkins->>Jenkins: Run Pipeline Stages
-    Jenkins->>Jenkins: Build, Test, Code Coverage, Publish Results
-    Jenkins->>User: Display Results
-
-```
-
+![Sequence Diagram](/Images/Seq.png)
 
 # IMPORTANT setup
 ## Jenkins configuration to recognize the docker (follow the step beloow)
